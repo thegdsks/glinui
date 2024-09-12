@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "target": "ES6",
+      "module": "ESNext",
+      "jsx": "react",
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "declaration": true,
+      "declarationDir": "dist/types",
+      "strict": true
+    },
+    "exclude": ["node_modules", "dist"]
+  }
+  
