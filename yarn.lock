@@ -1253,23 +1253,13 @@
   resolved "https://registry.npmjs.org/@pkgr/core/-/core-0.1.1.tgz"
   integrity sha512-cq8o4cWH0ibXh9VGi5P20Tu9XF/0fFXl9EUinr9QfTM7a7p0oTA4iJRCQWppXR1Pg8dSM0UCItCkPwsk9qWWYA==
 
-"@repo/eslint-config@file:":
-  version "0.0.0"
-  dependencies:
-    "@repo/eslint-config" "file:"
-
-"@repo/eslint-config@file:/Users/gdsks/Development/GLINCKER ECOMM/glinui/packages/eslint-config":
+"@repo/eslint-config@file:", "@repo/eslint-config@file:/Users/gdsks/Development/GLINCKER ECOMM/glinui/packages/eslint-config":
   version "0.0.0"
   resolved "file:packages/eslint-config"
   dependencies:
     "@repo/eslint-config" "file:"
 
-"@repo/typescript-config@file:":
-  version "0.0.0"
-  dependencies:
-    "@repo/typescript-config" "file:"
-
-"@repo/typescript-config@file:/Users/gdsks/Development/GLINCKER ECOMM/glinui/packages/typescript-config":
+"@repo/typescript-config@file:", "@repo/typescript-config@file:/Users/gdsks/Development/GLINCKER ECOMM/glinui/packages/typescript-config":
   version "0.0.0"
   resolved "file:packages/typescript-config"
   dependencies:
@@ -1854,7 +1844,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^16.8.0 || ^17.0.0 || ^18.0.0", "@types/react@^18.3.3", "@types/react@^18.3.5", "@types/react@>=16":
+"@types/react@*", "@types/react@^16.8.0 || ^17.0.0 || ^18.0.0", "@types/react@^18.3.5", "@types/react@>=16":
   version "18.3.5"
   resolved "https://registry.npmjs.org/@types/react/-/react-18.3.5.tgz"
   integrity sha512-WeqMfGJLGuLCqHGYRGHxnKrXcTitc6L/nBUWfWPcTarG3t9PsquqUMuVeXZeca+mglY4Vo5GZjCi0A3Or2lnxA==
