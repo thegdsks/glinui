@@ -1,8 +1,5 @@
 import { fontSans } from '@/lib/fonts';
-import { absoluteUrl, cn, constructMetadata } from '@/lib/utils';
-import { Toaster } from '@/components/ui/sonner';
-import { TooltipProvider } from '@/components/ui/tooltip';
-import { Analytics } from '@/components/analytics';
+import { cn } from '@/lib/utils';
 import { PHProvider } from '@/components/posthog-provider';
 import { ThemeProvider } from '@/components/theme-provider';
 
@@ -40,7 +37,12 @@ export default function RootLayout({
         )}
       >
         <PHProvider>
-          <ThemeProvider attribute="class" defaultTheme="light">
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="light"
+            enableSystem
+            disableTransitionOnChange
+          >
             {children}
           </ThemeProvider>
         </PHProvider>

@@ -1,4 +1,4 @@
-import { DiscordLogoIcon, InstagramLogoIcon } from "@radix-ui/react-icons";
+import { DiscordLogoIcon, InstagramLogoIcon } from '@radix-ui/react-icons';
 import {
   AlertTriangle,
   ArrowRight,
@@ -22,13 +22,18 @@ import {
   Trash,
   User,
   X,
-} from "lucide-react";
+} from 'lucide-react';
 
 export type IconProps = React.HTMLAttributes<SVGElement>;
 
 export const Icons = {
   logo: ({ className, ...props }: { className: string }) => (
-    <img src="/icon.png" alt="Magic UI" className={className} {...props} />
+    <img
+      src="/assets/images/logo/glinweb_light.svg"
+      alt="GLINCKER"
+      className={className}
+      {...props}
+    />
   ),
   close: X,
   spinner: Loader2,

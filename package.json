@@ -27,5 +27,8 @@
   "workspaces": [
     "packages/glinui",
     "apps/glinui-docs"
-  ]
+  ],
+  "dependencies": {
+    "glinui": "^1.0.0"
+  }
 }

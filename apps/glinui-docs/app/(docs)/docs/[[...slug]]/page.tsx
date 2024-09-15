@@ -44,8 +44,8 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${doc.title} | Magic UI`,
-    description: doc.description,
+    title: `${doc.title} | Glin UI`,
+    description: `${doc.description} | GLINCKER`,
     openGraph: {
       title: doc.title,
       description: doc.description,

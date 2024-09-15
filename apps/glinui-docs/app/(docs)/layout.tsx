@@ -1,4 +1,4 @@
-import { SiteBanner } from '@/components/site-banner';
+import AlertStrip from '@/components/AlertStrip';
 import { SiteFooter } from '@/components/site-footer';
 import { SiteHeader } from '@/components/site-header';
 
@@ -11,7 +11,7 @@ export default async function MarketingLayout({
 }: MarketingLayoutProps) {
   return (
     <>
-      <SiteBanner />
+      <AlertStrip />
       <SiteHeader />
       <main className="flex-1">{children}</main>
       <SiteFooter />

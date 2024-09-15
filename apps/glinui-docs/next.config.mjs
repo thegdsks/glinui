@@ -20,7 +20,7 @@ const nextConfig = {
     },
   },
   images: {
-    domains: ['localhost', 'cdn.magicui.design'],
+    domains: ['localhost', 'cdn.glincker.com'],
   },
   async redirects() {
     return [

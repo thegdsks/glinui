@@ -117,3 +117,27 @@
   -webkit-mask-composite: source-in, xor;
   mask-composite: intersect;
 }
+
+
+/* Initially hide the light logo */
+.light-logo {
+  display: none;
+}
+
+/* When the theme is dark, show the light logo and hide the dark logo */
+.dark .light-logo {
+  display: block;
+}
+
+.dark .dark-logo {
+  display: none;
+}
+
+/* When the theme is light, show the dark logo and hide the light logo */
+.light .dark-logo {
+  display: block;
+}
+
+.light .light-logo {
+  display: none;
+}
