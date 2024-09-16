@@ -1,13 +1,13 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import Link from "next/link";
-import { ArrowRightIcon, Download } from "lucide-react";
-import { toast } from "sonner";
+import { useState } from 'react';
+import Link from 'next/link';
+import { ArrowRightIcon, Download } from 'lucide-react';
+import { toast } from 'sonner';
 
-import { cn } from "@/lib/utils";
-import { Button, buttonVariants } from "@/components/ui/button";
-import { Icons } from "@/components/icons";
+import { cn } from '@/lib/utils';
+import { Button, buttonVariants } from '@/components/ui/button';
+import { Icons } from '@/components/icons';
 
 interface RepoDownloadProps {
   repo: string;
@@ -29,12 +29,12 @@ export default function RepoDownload({
       const response = await fetch(
         `${process.env.NEXT_PUBLIC_APP_URL}/api/repo/download`,
         {
-          method: "POST",
+          method: 'POST',
           headers: {
-            "Content-Type": "application/json",
+            'Content-Type': 'application/json',
           },
           body: JSON.stringify({ repo, owner }),
-        },
+        }
       );
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
@@ -44,8 +44,8 @@ export default function RepoDownload({
       /* window.open(downloadUrl, "_blank"); */
       window.location.href = downloadUrl;
     } catch (error) {
-      toast.error("Error occured while downloading. Please try again.");
-      console.error("error", error);
+      toast.error('Error occured while downloading. Please try again.');
+      console.error('error', error);
     } finally {
       setLoading(false);
     }
@@ -58,7 +58,7 @@ export default function RepoDownload({
         disabled={loading}
         className="not-prose group relative w-full gap-2"
       >
-        {loading ? "Downloading" : "Free Download"}
+        {loading ? 'Downloading' : 'Free Download'}
         {!loading && <Download className="size-4" />}
         {loading && <Icons.spinner className="size-4 animate-spin" />}
       </Button>
@@ -71,9 +71,9 @@ export default function RepoDownload({
       target="_blank"
       className={cn(
         buttonVariants({
-          variant: "default",
+          variant: 'default',
         }),
-        "not-prose group relative w-full gap-1",
+        'not-prose group relative w-full gap-1'
       )}
     >
       Buy Now

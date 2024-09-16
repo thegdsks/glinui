@@ -1,9 +1,9 @@
-import { cn } from "@/lib/utils";
+import { cn } from '@/lib/utils';
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "@/components/ui/tooltip";
+} from '@/components/ui/tooltip';
 
 type TechComponentType = {
   name: string;
@@ -14,7 +14,7 @@ type TechComponents = Record<string, TechComponentType>;
 
 const techComponents: TechComponents = {
   nextjs: {
-    name: "Next.js 14",
+    name: 'Next.js 14',
     icon: (
       <svg
         role="img"
@@ -29,7 +29,7 @@ const techComponents: TechComponents = {
     ),
   },
   react: {
-    name: "React",
+    name: 'React',
     icon: (
       <svg
         role="img"
@@ -44,7 +44,7 @@ const techComponents: TechComponents = {
     ),
   },
   typescript: {
-    name: "Typescript ",
+    name: 'Typescript ',
     icon: (
       <svg
         viewBox="0 0 32 32"
@@ -58,7 +58,7 @@ const techComponents: TechComponents = {
   },
 
   tailwindcss: {
-    name: "Tailwind CSS",
+    name: 'Tailwind CSS',
     icon: (
       <svg
         role="img"
@@ -73,7 +73,7 @@ const techComponents: TechComponents = {
     ),
   },
   framermotion: {
-    name: "Framer Motion",
+    name: 'Framer Motion',
     icon: (
       <svg
         role="img"
@@ -94,7 +94,7 @@ const techComponents: TechComponents = {
     ),
   },
   shadcn: {
-    name: "shadcn",
+    name: 'shadcn',
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -139,7 +139,7 @@ export default function TechStack({
   className?: string;
 }) {
   return (
-    <div className={cn("flex flex-row gap-2", className)}>
+    <div className={cn('flex flex-row gap-2', className)}>
       {technologies.map((tech) => (
         <Tooltip key={tech}>
           <TooltipTrigger>{techComponents[tech].icon}</TooltipTrigger>

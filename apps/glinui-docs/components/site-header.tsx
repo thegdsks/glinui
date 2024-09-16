@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { StarIcon } from '@heroicons/react/24/solid';
 
 import { siteConfig } from '@/config/site';
 import { cn } from '@/lib/utils';

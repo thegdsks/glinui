@@ -11,8 +11,8 @@
   },
   "devDependencies": {
     "@types/react": "^18.3.5",
-    "@typescript-eslint/eslint-plugin": "^8.4.0",
-    "@typescript-eslint/parser": "^8.4.0",
+    "@typescript-eslint/eslint-plugin": "^8.5.0",
+    "@typescript-eslint/parser": "^8.5.0",
     "eslint": "^9.10.0",
     "husky": "^9.1.5",
     "lint-staged": "^15.2.10",
@@ -29,6 +29,8 @@
     "apps/glinui-docs"
   ],
   "dependencies": {
-    "glinui": "^1.0.0"
+    "glinui": "^1.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }

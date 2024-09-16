@@ -1,18 +1,18 @@
-"use client";
+'use client';
 
-import * as React from "react";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/navigation";
-import { SidebarOpen } from "lucide-react";
-import posthog from "posthog-js";
+import * as React from 'react';
+import Link, { LinkProps } from 'next/link';
+import { useRouter } from 'next/navigation';
+import { SidebarOpen } from 'lucide-react';
+import posthog from 'posthog-js';
 
-import { docsConfig } from "@/config/docs";
-import { siteConfig } from "@/config/site";
-import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
-import { ScrollArea } from "@/components/ui/scroll-area";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Icons } from "@/components/icons";
+import { docsConfig } from '@/config/docs';
+import { siteConfig } from '@/config/site';
+import { cn } from '@/lib/utils';
+import { Button } from '@/components/ui/button';
+import { ScrollArea } from '@/components/ui/scroll-area';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Icons } from '@/components/icons';
 
 export function MobileNav() {
   const [open, setOpen] = React.useState(false);
@@ -49,7 +49,7 @@ export function MobileNav() {
                   >
                     {item.title}
                   </MobileLink>
-                ),
+                )
             )}
           </div>
           <div className="flex flex-col space-y-2">
@@ -64,8 +64,8 @@ export function MobileNav() {
                       onOpenChange={setOpen}
                       onClick={() => item.event && posthog.capture(item.event)}
                       className={cn(
-                        "text-muted-foreground",
-                        item.disabled && "cursor-not-allowed opacity-60",
+                        'text-muted-foreground',
+                        item.disabled && 'cursor-not-allowed opacity-60'
                       )}
                     >
                       {item.title}
@@ -79,8 +79,8 @@ export function MobileNav() {
                     <span
                       key={index}
                       className={cn(
-                        "text-muted-foreground",
-                        item.disabled && "cursor-not-allowed opacity-60",
+                        'text-muted-foreground',
+                        item.disabled && 'cursor-not-allowed opacity-60'
                       )}
                     >
                       {item.title}
@@ -90,7 +90,7 @@ export function MobileNav() {
                         </span>
                       )}
                     </span>
-                  ),
+                  )
                 )}
               </div>
             ))}

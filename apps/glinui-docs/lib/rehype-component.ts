@@ -1,132 +1,116 @@
-import fs from "fs";
-import path from "path";
-import { u } from "unist-builder";
-import { visit } from "unist-util-visit";
-
-import { UnistNode, UnistTree } from "@/types/unist";
-
-import { registry } from "../registry";
-
-// import { styles } from "../registry/styles"
+import fs from 'fs';
+import path from 'path';
+import { u } from 'unist-builder';
+import { visit } from 'unist-util-visit';
+import { Node } from 'unist'; // Use official types from `unist`
+import { registry } from '../registry';
 
 export function rehypeComponent() {
-  return async (tree: UnistTree) => {
-    visit(tree, (node: UnistNode) => {
-      const { value: src } = getNodeAttributeByName(node, "src") || {};
+  return async (tree: Node) => {
+    // Use `Node` as the type for the tree
+    visit(tree, 'element', (node: any) => {
+      // Cast `node` as `any` for flexibility
 
-      if (node.name === "ComponentSource") {
-        const name = getNodeAttributeByName(node, "name")?.value as string;
+      const { value: src } = getNodeAttributeByName(node, 'src') || {};
+
+      if (node.tagName === 'ComponentSource') {
+        // Access `tagName` only if `node` is an element
+        const name = getNodeAttributeByName(node, 'name')?.value as string;
 
         if (!name) {
           return null;
         }
 
         try {
-          // for (const style of styles) {
           const component = registry[name];
           const src = component.files[0];
 
           // Read the source file.
           const filePath = path.join(process.cwd(), src);
-          let source = fs.readFileSync(filePath, "utf8");
+          let source = fs.readFileSync(filePath, 'utf8');
 
           // Replace imports.
-          // TODO: Use @swc/core and a visitor to replace this.
-          // For now a simple regex should do.
-          source = source.replaceAll(`@/registry/`, "@/");
-          // source = source.replaceAll("export default", "export");
+          source = source.replaceAll(`@/registry/`, '@/');
 
-          // Add code as children so that rehype can take over at build time.
+          // Add code as children so that rehype can process it at build time.
           node.children?.push(
-            u("element", {
-              tagName: "pre",
+            u('element', {
+              tagName: 'pre',
               properties: {
                 __src__: src,
               },
-              // attributes: [
-              //   {
-              //     name: "styleName",
-              //     type: "mdxJsxAttribute",
-              //     value: style.name,
-              //   },
-              // ],
               children: [
-                u("element", {
-                  tagName: "code",
+                u('element', {
+                  tagName: 'code',
                   properties: {
-                    className: ["language-tsx"],
+                    className: ['language-tsx'],
                   },
                   data: {
                     meta: `event="copy_source_code"`,
                   },
                   children: [
                     {
-                      type: "text",
+                      type: 'text',
                       value: source,
                     },
                   ],
                 }),
               ],
-            }),
+            })
           );
-          // }
         } catch (error) {
           console.error(error);
         }
       }
 
-      if (node.name === "ComponentPreview" || node.name === "BlockPreview") {
-        const name = getNodeAttributeByName(node, "name")?.value as string;
+      if (
+        node.tagName === 'ComponentPreview' ||
+        node.tagName === 'BlockPreview'
+      ) {
+        const name = getNodeAttributeByName(node, 'name')?.value as string;
 
         if (!name) {
           return null;
         }
 
         try {
-          // for (const style of styles) {
           const component = registry[name];
           const src = component.files[0];
 
           // Read the source file.
           const filePath = path.join(process.cwd(), src);
-          let source = fs.readFileSync(filePath, "utf8");
-
-          // console.log("name ", name);
-          // console.log("source ", source);
+          let source = fs.readFileSync(filePath, 'utf8');
 
           // Replace imports.
-          // TODO: Use @swc/core and a visitor to replace this.
-          // For now a simple regex should do.
-          source = source.replaceAll(`@/registry/`, "@/");
-          source = source.replaceAll("export default", "export");
+          source = source.replaceAll(`@/registry/`, '@/');
+          source = source.replaceAll('export default', 'export');
 
           // Add code as children so that rehype can take over at build time.
           node.children?.push(
-            u("element", {
-              tagName: "pre",
+            u('element', {
+              tagName: 'pre',
               properties: {
                 __src__: src,
               },
               children: [
-                u("element", {
-                  tagName: "code",
+                u('element', {
+                  tagName: 'code',
                   properties: {
-                    className: ["language-tsx"],
+                    className: ['language-tsx'],
                   },
                   data: {
                     meta: `event="copy_usage_code"`,
                   },
                   children: [
                     {
-                      type: "text",
+                      type: 'text',
                       value: source,
                     },
                   ],
                 }),
               ],
-            }),
+            })
           );
-          // }
         } catch (error) {
           console.error(error);
         }
@@ -135,20 +119,6 @@ export function rehypeComponent() {
   };
 }
 
-function getNodeAttributeByName(node: UnistNode, name: string) {
-  return node.attributes?.find((attribute) => attribute.name === name);
+function getNodeAttributeByName(node: any, name: string) {
+  return node.properties?.attributes?.find((attr: any) => attr.name === name);
 }
-
-// function getComponentSourceFileContent(node: UnistNode) {
-//   const src = getNodeAttributeByName(node, "src")?.value as string;
-
-//   if (!src) {
-//     return null;
-//   }
-
-//   // Read the source file.
-//   const filePath = path.join(process.cwd(), src);
-//   const source = fs.readFileSync(filePath, "utf8");
-
-//   return source;
-// }

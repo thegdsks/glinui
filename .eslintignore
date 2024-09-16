@@ -1,0 +1,6 @@
+# Ignore contentlayer generated files
+apps/**/.contentlayer/** 
+# Ignore build directories
+dist/
+# Ignore node_modules
+node_modules/

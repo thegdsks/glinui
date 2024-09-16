@@ -8,7 +8,12 @@
       "outputs": [".next/**", "!.next/cache/**"]
     },
     "lint": {
-      "dependsOn": ["^lint"]
+      "dependsOn": ["^lint"],
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        "!apps/glinui-docs/.contentlayer/**",
+        "!apps/glinui-docs/components/**"
+      ]
     },
     "dev": {
       "cache": false,

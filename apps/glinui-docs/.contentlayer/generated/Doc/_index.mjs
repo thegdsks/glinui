@@ -2,5 +2,6 @@
 
 import docs__indexMdx from './docs__index.mdx.json' assert { type: 'json' }
 import docs__components__alertMdx from './docs__components__alert.mdx.json' assert { type: 'json' }
+import docs__components__buttonMdx from './docs__components__button.mdx.json' assert { type: 'json' }
 
-export const allDocs = [docs__indexMdx, docs__components__alertMdx]
+export const allDocs = [docs__indexMdx, docs__components__alertMdx, docs__components__buttonMdx]
