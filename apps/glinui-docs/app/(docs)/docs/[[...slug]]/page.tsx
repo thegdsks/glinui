@@ -94,17 +94,17 @@ export default async function DocPage({ params }: DocPageProps) {
       })}
     >
       <div className="mx-auto w-full min-w-0">
-        <div className="mb-4 flex items-center space-x-1 text-sm text-muted-foreground">
+        <div className="text-muted-foreground mb-4 flex items-center space-x-1 text-sm">
           <div className="truncate">Docs</div>
           <ChevronRightIcon className="size-4" />
-          <div className="font-medium text-foreground">{doc.title}</div>
+          <div className="text-foreground font-medium">{doc.title}</div>
         </div>
         <div className="space-y-2">
           <h1 className={cn('scroll-m-20 text-4xl font-bold tracking-tight')}>
             {doc.title}
           </h1>
           {doc.description && (
-            <p className="text-balance text-lg text-muted-foreground">
+            <p className="text-muted-foreground text-balance text-lg">
               {doc.description}
             </p>
           )}
@@ -144,7 +144,7 @@ export default async function DocPage({ params }: DocPageProps) {
         <div className="hidden text-sm xl:block">
           <div className="sticky top-16 -mt-10 pt-4">
             <ScrollArea className="pb-10">
-              <div className="space-y-4 sticky top-16 -mt-10 h-[calc(100vh-3.5rem)] py-12">
+              <div className="sticky top-16 -mt-10 h-[calc(100vh-3.5rem)] space-y-4 py-12">
                 <TableOfContents toc={toc} />
                 <Contribute doc={doc} />
               </div>

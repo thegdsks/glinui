@@ -2,6 +2,8 @@ import { fontSans } from '@/lib/fonts';
 import { cn } from '@/lib/utils';
 import { PHProvider } from '@/components/posthog-provider';
 import { ThemeProvider } from '@/components/theme-provider';
+import { TooltipProvider } from '@/components/ui/tooltip';
+import { Toaster } from '@/components/ui/sonner';
 
 import '@/styles/globals.css';
 import '@/styles/mdx.css';
@@ -43,7 +45,10 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            {children}
+            <TooltipProvider>
+              {children}
+              <Toaster />
+            </TooltipProvider>
           </ThemeProvider>
         </PHProvider>
       </body>
