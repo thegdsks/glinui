@@ -1108,11 +1108,6 @@
   dependencies:
     glob "10.3.10"
 
-"@next/font@^14.2.11":
-  version "14.2.11"
-  resolved "https://registry.yarnpkg.com/@next/font/-/font-14.2.11.tgz#9c27f9e571c84569c2e220729abe39d6b86b43c1"
-  integrity sha512-ektZosXenaRWvc3ZoM7NibTJSN5gQJyCCNG6HYNFTZcxDMgmFALY/6XPsHiCmZZtwL9L9U3HY/96u9x/+KpjUw==
-
 "@next/swc-darwin-arm64@14.1.1":
   version "14.1.1"
   resolved "https://registry.npmjs.org/@next/swc-darwin-arm64/-/swc-darwin-arm64-14.1.1.tgz"
@@ -5741,10 +5736,10 @@ lru-cache@^5.1.1:
   dependencies:
     yallist "^3.0.2"
 
-lucide-react@^0.401.0:
-  version "0.401.0"
-  resolved "https://registry.npmjs.org/lucide-react/-/lucide-react-0.401.0.tgz"
-  integrity sha512-4HijVZoWBe8BfLNbXyLH8ZZI4XUj/YeGWaHHjEe0/49L5Qw4pVA+HvZrvJH8ekNxz2nLvoDlfsJVOBNgBs9Bug==
+lucide-react@^0.441.0:
+  version "0.441.0"
+  resolved "https://registry.yarnpkg.com/lucide-react/-/lucide-react-0.441.0.tgz#afc0d76c5ffb5bdac7adf0c9626217a5451b1af1"
+  integrity sha512-0vfExYtvSDhkC2lqg0zYVW1Uu9GsI4knuV9GP9by5z0Xhc4Zi5RejTxfz9LsjRmCyWVzHCJvxGKZWcRyvQCWVg==
 
 markdown-extensions@^1.0.0:
   version "1.1.1"
