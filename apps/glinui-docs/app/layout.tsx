@@ -1,15 +1,14 @@
 import { fontSans } from '@/lib/fonts';
 import { cn } from '@/lib/utils';
-import { PHProvider } from '@/components/posthog-provider';
 import { ThemeProvider } from '@/components/theme-provider';
-import { TooltipProvider } from '@/components/ui/tooltip';
 import { Toaster } from '@/components/ui/sonner';
 
-import '@/styles/globals.css';
 import '@/styles/mdx.css';
+import '@/styles/globals.css';
 
 import type { Viewport } from 'next';
 import { Metadata } from 'next';
+import { TooltipProvider } from '@/components/ui/tooltip';
 
 export const metadata: Metadata = {
   title: 'Glin UI',
@@ -38,19 +37,15 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-        <PHProvider>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="light"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <TooltipProvider>
-              {children}
-              <Toaster />
-            </TooltipProvider>
-          </ThemeProvider>
-        </PHProvider>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <TooltipProvider>{children}</TooltipProvider>
+          <Toaster />
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -7,7 +7,7 @@ export const config = {
 
 export default async function middleware(req: NextRequest) {
   const engyneSubdomain = 'glinui';
-  //   const url = req.nextUrl.clone();
+  const url = req.nextUrl.clone();
 
   const { pathname } = req.nextUrl;
 

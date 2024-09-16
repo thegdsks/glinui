@@ -5,9 +5,7 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
     "@types/react": "^18.3.5",
@@ -19,9 +17,6 @@
     "prettier": "^3.3.3",
     "turbo": "^2.1.1",
     "typescript": "^5.5.4"
-  },
-  "engines": {
-    "node": ">=18"
   },
   "packageManager": "yarn@1.22.22",
   "workspaces": [
