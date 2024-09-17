@@ -63,12 +63,12 @@ export default async function Hero() {
                     'md:text-7xl lg:text-7xl sm:text-7xl text-5xl'
                   )}
                 >
-                  UI library for Design Engineers
+                  Modern UI Designing Ecosystems
                 </h1>
               </div>
 
               <p className="max-w-xl text-balance text-left text-base tracking-tight text-black dark:font-medium dark:text-white md:text-center md:text-lg ">
-                50+ free and open-source animated components built with{' '}
+                Templates, Components, WireFrames, and more. <br />
                 <b>React</b>, <b>Typescript</b>, <b>Tailwind CSS</b>, and{' '}
                 <b>Framer Motion</b>
                 .
