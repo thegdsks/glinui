@@ -11,7 +11,9 @@
 
 # next.js
 /.next/
+/.contentlayer/
 /out/
+/dist/
 
 # production
 /build
