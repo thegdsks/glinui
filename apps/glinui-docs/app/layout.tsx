@@ -12,9 +12,116 @@ import { TooltipProvider } from '@/components/ui/tooltip';
 import { WebAnalytics } from '@/components/analytics';
 import { Analytics } from '@vercel/analytics/react';
 export const metadata: Metadata = {
-  title: 'Glin UI',
+  title: 'GlinUI - Lightweight, Customizable UI Component Library | GLINCKER',
   description:
-    'Beautiful UI components and templates to make your landing page look stunning.',
+    'GlinUI is a modern, lightweight, and highly customizable UI component library designed for developers. Build fast, scalable web applications with ready-to-use components compatible with TailwindCSS, Bootstrap, and more.',
+  applicationName: 'GLINUI',
+  keywords:
+    'UI component library, GLINCKER, GDS K S, GDSKS, GlinUI, customizable components, lightweight UI library, TailwindCSS components, Bootstrap integration, React components, GlinWeb, scalable web components, server-side rendering, open-source UI library, Glin UI docs',
+
+  robots: 'all',
+  appleWebApp: {
+    title: 'GlinUI',
+    statusBarStyle: 'black-translucent',
+    startupImage: [
+      '/favicon/favicon.ico',
+      {
+        url: '/favicon/favicon.ico',
+        media: '(device-width: 768px) and (device-height: 1024px)',
+      },
+    ],
+  },
+  icons: {
+    icon: [
+      // Favicon
+      {
+        media: '(prefers-color-scheme: light)',
+        url: '/favicon/favicon.ico',
+        rel: 'icon',
+        href: '/favicon/favicon.ico',
+      },
+      {
+        media: '(prefers-color-scheme: dark)',
+        url: '/favicond/favicon.ico',
+        rel: 'icon',
+        href: '/favicond/favicon.ico',
+      },
+      // Apple Favicon
+      {
+        media: '(prefers-color-scheme: dark)',
+        url: '/favicon/apple-touch-icon.png',
+        rel: 'apple-touch-icon',
+        sizes: '180x180',
+        href: '/favicon/apple-touch-icon.png',
+      },
+      {
+        media: '(prefers-color-scheme: dark)',
+        url: '/favicond/apple-touch-icon.png',
+        rel: 'apple-touch-icon',
+        sizes: '180x180',
+        href: '/favicond/apple-touch-icon.png',
+      },
+      // 32 Favicon
+      {
+        media: '(prefers-color-scheme: dark)',
+        url: '/favicon/favicon-32x32.png',
+        rel: 'icon',
+        sizes: '32x32',
+        href: '/favicon/favicon-32x32.png',
+      },
+      {
+        media: '(prefers-color-scheme: dark)',
+        url: '/favicon/favicon-32x32.png',
+        rel: 'icon',
+        sizes: '32x32',
+        href: '/favicon/favicon-32x32.png',
+      },
+      // 16 Favicon
+      {
+        media: '(prefers-color-scheme: dark)',
+        url: '/favicon/favicon-16x16.png',
+        rel: 'icon',
+        sizes: '16x16',
+        href: '/favicon/favicon-16x16.png',
+      },
+      {
+        media: '(prefers-color-scheme: dark)',
+        url: '/favicon/favicon-16x16.png',
+        rel: 'icon',
+        sizes: '16x16',
+        href: '/favicon/favicon-16x16.png',
+      },
+      // mask-icon
+      {
+        media: '(prefers-color-scheme: dark)',
+        url: '/favicon/safari-pinned-tab.svg',
+        rel: 'mask-icon',
+        href: '/favicon/safari-pinned-tab.svg',
+      },
+      {
+        media: '(prefers-color-scheme: dark)',
+        url: '/favicon/safari-pinned-tab.svg',
+        rel: 'mask-icon',
+        href: '/favicon/safari-pinned-tab.svg',
+      },
+    ],
+  },
+  openGraph: {
+    images: [
+      {
+        url: '/assets/Glincker.png',
+        width: 800,
+        height: 600,
+      },
+    ],
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://glincker.com',
+    title: 'GLINCKER | WEBANDESIGNS| GETYSTORE| GLINWEB| GDS K S',
+    description:
+      'An Ecommerce website where one can buy products in very simple, fast and coolest way.',
+    siteName: 'Glincker',
+  },
 };
 
 export const viewport: Viewport = {
