@@ -109,7 +109,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: '/assets/Glinui.png',
+        url: 'https://www.glinui.com/assets/Glinui.png',
         width: 800,
         height: 600,
       },
@@ -139,6 +139,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          property="og:logo"
+          content="https://www.glinui.com/assets/images/logo/glinweb_dark.svg"
+        />
+      </head>
       <body
         className={cn(
           'relative flex min-h-screen w-full flex-col justify-center overflow-x-hidden scroll-smooth bg-background font-sans antialiased',
