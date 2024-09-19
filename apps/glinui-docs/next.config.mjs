@@ -36,7 +36,7 @@ const nextConfig = {
       },
       {
         source: '/components',
-        destination: '/docs/components/marquee',
+        destination: '/docs/components/alert',
         permanent: true,
       },
       {
@@ -46,7 +46,7 @@ const nextConfig = {
       },
       {
         source: '/docs/components',
-        destination: '/docs/components/marquee',
+        destination: '/docs/components/alert',
         permanent: true,
       },
     ];

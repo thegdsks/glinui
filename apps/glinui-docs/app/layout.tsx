@@ -109,18 +109,18 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: '/assets/Glincker.png',
+        url: '/assets/Glinui.png',
         width: 800,
         height: 600,
       },
     ],
     type: 'website',
     locale: 'en_US',
-    url: 'https://glincker.com',
-    title: 'GLINCKER | WEBANDESIGNS| GETYSTORE| GLINWEB| GDS K S',
+    url: 'https://glinui.com',
+    title: 'GlinUI - Lightweight, Customizable UI Component Library | GLINCKER',
     description:
-      'An Ecommerce website where one can buy products in very simple, fast and coolest way.',
-    siteName: 'Glincker',
+      'GlinUI is a modern, lightweight, and highly customizable UI component library designed for developers. Build fast, scalable web applications with ready-to-use components compatible with TailwindCSS, Bootstrap, and more.',
+    siteName: 'GlinUI',
   },
 };
 
