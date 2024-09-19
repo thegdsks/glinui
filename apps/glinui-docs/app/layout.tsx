@@ -9,7 +9,8 @@ import '@/styles/globals.css';
 import type { Viewport } from 'next';
 import { Metadata } from 'next';
 import { TooltipProvider } from '@/components/ui/tooltip';
-
+import { WebAnalytics } from '@/components/analytics';
+import { Analytics } from '@vercel/analytics/react';
 export const metadata: Metadata = {
   title: 'Glin UI',
   description:
@@ -45,6 +46,8 @@ export default function RootLayout({
         >
           <TooltipProvider>{children}</TooltipProvider>
           <Toaster />
+          <Analytics />
+          <WebAnalytics />
         </ThemeProvider>
       </body>
     </html>
