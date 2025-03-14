@@ -4,9 +4,10 @@
   "compilerOptions": {
     "isolatedModules": false,
     "resolveJsonModule": true,
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@/src/*": ["src/*"]
     }
   },
   "include": ["src/**/*.ts"],
