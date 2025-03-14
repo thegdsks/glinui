@@ -1,0 +1,14 @@
+{
+  "$schema": "https://glinui.com/schema/registry-item.json",
+  "name": "typography-muted",
+  "type": "registry:example",
+  "author": "glinui (https://glinui.com)",
+  "files": [
+    {
+      "path": "examples/typography-muted.tsx",
+      "content": "export default function TypographyMuted() {\n  return (\n    <p className=\"text-sm text-muted-foreground\">Enter your email address.</p>\n  )\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}

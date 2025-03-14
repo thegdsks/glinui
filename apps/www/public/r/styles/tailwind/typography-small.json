@@ -1,0 +1,14 @@
+{
+  "$schema": "https://glinui.com/schema/registry-item.json",
+  "name": "typography-small",
+  "type": "registry:example",
+  "author": "glinui (https://glinui.com)",
+  "files": [
+    {
+      "path": "examples/typography-small.tsx",
+      "content": "export default function TypographySmall() {\n  return (\n    <small className=\"text-sm font-medium leading-none\">Email address</small>\n  )\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://glinui.com/schema/registry-item.json",
+  "name": "button-secondary",
+  "type": "registry:example",
+  "author": "glinui (https://glinui.com)",
+  "registryDependencies": ["button"],
+  "files": [
+    {
+      "path": "examples/button-secondary.tsx",
+      "content": "import { Button } from \"@/registry/tailwind/ui/button\"\n\nexport default function ButtonSecondary() {\n  return <Button variant=\"secondary\">Secondary</Button>\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}
