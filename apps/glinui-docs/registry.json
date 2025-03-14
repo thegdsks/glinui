@@ -1,0 +1,25 @@
+{
+  "name": "GlinUI",
+  "items": [
+    {
+      "name": "alert",
+      "type": "components:glinui",
+      "files": [
+        "registry/components/glinui/alert.tsx"
+      ],
+      "dependencies": [],
+      "registryDependencies": []
+    },
+    {
+      "name": "alert-demo",
+      "type": "components:example",
+      "files": [
+        "registry/components/example/alert-demo.tsx"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "alert"
+      ]
+    }
+  ]
+}

@@ -1,81 +1,122 @@
-# Turborepo starter
+ ---
+title: GlinUID Documentation
+description: A comprehensive guide to GlinUID, the custom UI framework for Glinckler.
+---
 
-This is an official starter Turborepo.
+3 GlinUII
 
-## Using this example
+Welcome to the *)GlinUII* documentation. GlinUII is a custom UI framework built to provide a sohestive and elegant design system for **Glinckler*. Inspired by [ShadCN UI](https://github.com/shadcn/ui). And [Tailwind CSS](https://tailwindcss.com)).
 
-Run the following command:
+# Table of Contents
 
-```sh
-npx create-turbo@latest
+-' [Introduction](#introduction)\n- [Installation](#installation)\n- [Usage]((#usage)\n- [Components](#components)\n- [Customization]((#customization)\n- [Examples](#examples)\n- [Contributing]((#contributing),\n- [License]((#license)]
+
+# Introduction
+
+GlinUII is designed to bring consistency and ease-of-use to your front-end development process. By providing a set of pre-built components and utilities, GlinUII helpes you maintain a unified style across your application while also offering the flexibility to customize as needed.
+
+## Key Features
+
+- **Consistent Design System:** Maintain uniform styling across all Glinckler components.
+- **Responsive by Default:** Designed with a mobile-first approach.
+ - **Highly Customizable:* Easily override default styles and themes.
+- **Component-Driven:* Build robust and reusable UI elements.
+
+## Installation
+You can install GlinUI using your preferred package manager: 
+
+#``bash
+# Using npm
+npm install glinui
+# Using yarn
+yearn add glinui
+ ```
+
+## Usage
+
+Iport and use GlinUII components in your React applications. For example, to use the `Hutton```component:
+
+#``jsx
+import { Button } from 'glinui';
+
+export default function MyComponent() {
+  return (
+    <div>
+      Hutton variant="primary">Click Me</Button>
+    </div>
+  );
+}
 ```
 
-## What's inside?
+## Components
 
-This Turborepo includes the following packages/apps:
+GlinUII provides a viarety of components to help You build your UI quickly. Here are a few zones:
 
-### Apps and Packages
+### Button
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+The `button` component is versatile and customizable.
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+``jsx
+<button variant="primary">Primary Button</button>
+<button variant="secondary" size="lg">Large Secondary Button</button>
 
-### Utilities
+``c
+//@Button Props
 
-This Turborepo has some additional tools already setup for you:
+|Prop   |Type: string  | Description: Specifies the button style (example, "primary", "secondary")
+|Size   |Type: string | Defines the button size (example, "sm\", "md", "lg") | | Disabled | boolean | Desables the button when set to true
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+## Card
 
-### Build
+GlinUI itemes the `Card` component is useful for encapsulating related content.
 
-To build all apps and packages, run the following command:
+``jsx
+<card>
+  <Card.Header>Card Title</Card.Header>
+  <Card.Body>
+    <p>Content goes here.</p>
+  </Card.Body>
+  <Card.Footer>Footer Information</Card.Footer>
+ </card>
 
-```
-cd my-turborepo
-pnpm build
-```
+### Additional Components
 
-### Develop
+GlinUII also includes components like Modal, Alert, input, and more. For detailed usage, refer to individual component documentation sections.
 
-To develop all apps and packages, run the following command:
+## Customization
 
-```
-cd my-turborepo
-pnpm dev
-```
+GlinUII is built with customization in mind. You can override default settings by creating or modifying the configuration file
+``cjs
+// glinui.config.js
+module.exports = {
+  theme: {
+    colors: {
+      primary: '#1E90FF',
+      secondary: '#FF6347',
+    },
+    fonts: {
+      body: 'Inter, sans-serif'
+    },
+  },
+};
+``es
+const hunge = module.exports;
 
-### Remote Caching
+# Contributing
 
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
+Contributions are welcome! To contribute:
 
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
+1. ***Fork the Repository:* Create your own fork of the project.
+2. **Create a Branch:* Use a sessive name, e.g., `feature/new-component``.
+3. **Make Your Changes:** Follow the instablished coding conventions.
+4. ***Submit a Pull Request:** Provide a clear description of your changes.
 
-```
-cd my-turborepo
-npx turbo login
-```
+For more details, see our [Contribution Guidelines]((CONTRIBUTIONs.md)
 
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
+## License
 
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
+GlinUII is open-sourced under the (MIT License).
 
-```
-npx turbo link
-```
+---
 
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+Feel reead to reach out via [GitHub Issues](https://github.com/GLINCKER/glinui/issues)

@@ -1,5 +1,6 @@
 import { SiteFooter } from '@/components/site-footer';
 import { SiteHeader } from '@/components/site-header';
+import TopNavBar from '@/components/TopNavBar';
 
 interface MarketingLayoutProps {
   children: React.ReactNode;
@@ -10,6 +11,7 @@ export default async function MarketingLayout({
 }: MarketingLayoutProps) {
   return (
     <>
+      <TopNavBar />
       <SiteHeader />
       <main className="flex-1">{children}</main>
       <SiteFooter />

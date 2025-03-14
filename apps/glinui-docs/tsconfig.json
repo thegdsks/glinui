@@ -24,9 +24,7 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"],
-      "@/components/magicui/*": ["./registry/components/magicui/*"],
-      "@/components/example/*": ["./registry/components/example/*"],
+      "@/*": ["./*"], 
       "contentlayer/generated": ["./.contentlayer/generated"]
     }
   },

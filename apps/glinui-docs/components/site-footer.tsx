@@ -1,4 +1,3 @@
-import { siteConfig } from '@/config/site';
 import Image from 'next/image';
 import Link from 'next/link';
 import Social from './Social';
@@ -15,7 +14,7 @@ export function SiteFooter() {
           'radial-gradiFent(50% 100% at 50% 100%,rgba(255,255,255,.32) 0%,rgba(255,255,255,0) 100%)',
       }}
     >
-      <footer className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
+      <footer className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
             <a
@@ -24,7 +23,7 @@ export function SiteFooter() {
             >
               <Logo />
             </a>
-            <p className="max-w-xs mt-4 text-sm text-gray-600 dark:text-slate-400">
+            <p className="mt-4 max-w-xs text-sm text-gray-600 dark:text-slate-400">
               One Stop to provide all solutions for your online presence. Global
               Linkers Network
             </p>
@@ -33,22 +32,22 @@ export function SiteFooter() {
 
           <FooterLinks />
         </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8 dark:border-gray-700" />
         <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-xs text-gray-80 block dark:text-gray-400">
+          <span className="text-gray-80 block text-xs dark:text-gray-400">
             © 2024 GLINCKER LLC. All Rights Reserved.
           </span>
-          <div className="flex mt-4 space-x-6 justify-center sm:mt-0">
-            <ul className="flex mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+          <div className="mt-4 flex justify-center space-x-6 sm:mt-0">
+            <ul className="mt-3 flex text-sm text-gray-500 sm:mt-0 dark:text-gray-400">
               <li>
-                <a href="#" className="hover:underline me-4 md:me-6">
+                <a href="#" className="me-4 hover:underline md:me-6">
                   About
                 </a>
               </li>
               <li>
                 <Link
                   href="/legal/privacy"
-                  className="hover:underline me-4 md:me-6 flex items-center space-x-1"
+                  className="me-4 flex items-center space-x-1 hover:underline md:me-6"
                 >
                   Privacy Policy
                   <Image
@@ -61,7 +60,7 @@ export function SiteFooter() {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:underline me-4 md:me-6">
+                <Link href="#" className="me-4 hover:underline md:me-6">
                   Licensing
                 </Link>
               </li>

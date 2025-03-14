@@ -67,7 +67,7 @@ export default function RepoDownload({
 
   return (
     <Link
-      href="https://pro.magicui.design/pricing"
+      href="https://www.glinui.com/"
       target="_blank"
       className={cn(
         buttonVariants({

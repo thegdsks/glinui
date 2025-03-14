@@ -1,0 +1,19 @@
+[
+  {
+    "name": "alert",
+    "files": [
+      "registry/components/glinui/alert.tsx"
+    ],
+    "type": "components:glinui"
+  },
+  {
+    "name": "alert-demo",
+    "registryDependencies": [
+      "alert"
+    ],
+    "files": [
+      "registry/components/example/alert-demo.tsx"
+    ],
+    "type": "components:example"
+  }
+]
