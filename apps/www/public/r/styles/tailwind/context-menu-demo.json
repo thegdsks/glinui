@@ -3,7 +3,9 @@
   "name": "context-menu-demo",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["context-menu"],
+  "registryDependencies": [
+    "context-menu"
+  ],
   "files": [
     {
       "path": "examples/context-menu-demo.tsx",

@@ -3,7 +3,9 @@
   "name": "tabs",
   "type": "registry:ui",
   "author": "glinui (https://glinui.com)",
-  "dependencies": ["@radix-ui/react-tabs"],
+  "dependencies": [
+    "@radix-ui/react-tabs"
+  ],
   "files": [
     {
       "path": "ui/tabs.tsx",

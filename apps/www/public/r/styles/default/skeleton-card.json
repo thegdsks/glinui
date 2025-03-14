@@ -3,7 +3,9 @@
   "name": "skeleton-card",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["skeleton"],
+  "registryDependencies": [
+    "skeleton"
+  ],
   "files": [
     {
       "path": "examples/skeleton-card.tsx",

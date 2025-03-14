@@ -3,7 +3,9 @@
   "name": "calendar-demo",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["calendar"],
+  "registryDependencies": [
+    "calendar"
+  ],
   "files": [
     {
       "path": "examples/calendar-demo.tsx",

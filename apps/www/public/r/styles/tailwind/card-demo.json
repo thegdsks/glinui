@@ -3,7 +3,11 @@
   "name": "card-demo",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["card", "button", "switch"],
+  "registryDependencies": [
+    "card",
+    "button",
+    "switch"
+  ],
   "files": [
     {
       "path": "examples/card-demo.tsx",

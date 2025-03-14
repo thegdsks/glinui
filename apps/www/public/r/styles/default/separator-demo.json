@@ -3,7 +3,9 @@
   "name": "separator-demo",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["separator"],
+  "registryDependencies": [
+    "separator"
+  ],
   "files": [
     {
       "path": "examples/separator-demo.tsx",

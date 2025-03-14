@@ -3,7 +3,9 @@
   "name": "switch-demo",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["switch"],
+  "registryDependencies": [
+    "switch"
+  ],
   "files": [
     {
       "path": "examples/switch-demo.tsx",

@@ -3,7 +3,9 @@
   "name": "sheet-demo",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["sheet"],
+  "registryDependencies": [
+    "sheet"
+  ],
   "files": [
     {
       "path": "examples/sheet-demo.tsx",

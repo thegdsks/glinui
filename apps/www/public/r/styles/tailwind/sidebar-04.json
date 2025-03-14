@@ -4,7 +4,11 @@
   "type": "registry:block",
   "author": "glinui (https://glinui.com)",
   "description": "A floating sidebar with submenus.",
-  "registryDependencies": ["sidebar", "breadcrumb", "separator"],
+  "registryDependencies": [
+    "sidebar",
+    "breadcrumb",
+    "separator"
+  ],
   "files": [
     {
       "path": "blocks/sidebar-04/page.tsx",
@@ -19,5 +23,8 @@
       "target": ""
     }
   ],
-  "categories": ["sidebar", "dashboard"]
+  "categories": [
+    "sidebar",
+    "dashboard"
+  ]
 }

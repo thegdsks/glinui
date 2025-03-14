@@ -3,7 +3,9 @@
   "name": "radio-group",
   "type": "registry:ui",
   "author": "glinui (https://glinui.com)",
-  "dependencies": ["@radix-ui/react-radio-group"],
+  "dependencies": [
+    "@radix-ui/react-radio-group"
+  ],
   "files": [
     {
       "path": "ui/radio-group.tsx",

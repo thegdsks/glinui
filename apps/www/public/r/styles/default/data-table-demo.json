@@ -3,7 +3,9 @@
   "name": "data-table-demo",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["data-table"],
+  "registryDependencies": [
+    "data-table"
+  ],
   "files": [
     {
       "path": "examples/data-table-demo.tsx",

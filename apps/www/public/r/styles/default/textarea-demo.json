@@ -3,7 +3,9 @@
   "name": "textarea-demo",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["textarea"],
+  "registryDependencies": [
+    "textarea"
+  ],
   "files": [
     {
       "path": "examples/textarea-demo.tsx",

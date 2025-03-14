@@ -3,7 +3,10 @@
   "name": "combobox-popover",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["combobox", "popover"],
+  "registryDependencies": [
+    "combobox",
+    "popover"
+  ],
   "files": [
     {
       "path": "examples/combobox-popover.tsx",

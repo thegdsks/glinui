@@ -3,7 +3,9 @@
   "name": "hover-card",
   "type": "registry:ui",
   "author": "glinui (https://glinui.com)",
-  "dependencies": ["@radix-ui/react-hover-card"],
+  "dependencies": [
+    "@radix-ui/react-hover-card"
+  ],
   "files": [
     {
       "path": "ui/hover-card.tsx",

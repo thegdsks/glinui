@@ -3,7 +3,11 @@
   "name": "input-with-label",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["input", "button", "label"],
+  "registryDependencies": [
+    "input",
+    "button",
+    "label"
+  ],
   "files": [
     {
       "path": "examples/input-with-label.tsx",

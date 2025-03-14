@@ -3,8 +3,12 @@
   "name": "alert-dialog",
   "type": "registry:ui",
   "author": "glinui (https://glinui.com)",
-  "dependencies": ["@radix-ui/react-alert-dialog"],
-  "registryDependencies": ["button"],
+  "dependencies": [
+    "@radix-ui/react-alert-dialog"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
   "files": [
     {
       "path": "ui/alert-dialog.tsx",

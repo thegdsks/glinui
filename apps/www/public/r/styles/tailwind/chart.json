@@ -3,8 +3,13 @@
   "name": "chart",
   "type": "registry:ui",
   "author": "glinui (https://glinui.com)",
-  "dependencies": ["recharts", "lucide-react"],
-  "registryDependencies": ["card"],
+  "dependencies": [
+    "recharts",
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "card"
+  ],
   "files": [
     {
       "path": "ui/chart.tsx",

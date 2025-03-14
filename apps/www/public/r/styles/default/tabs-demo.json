@@ -3,7 +3,9 @@
   "name": "tabs-demo",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["tabs"],
+  "registryDependencies": [
+    "tabs"
+  ],
   "files": [
     {
       "path": "examples/tabs-demo.tsx",

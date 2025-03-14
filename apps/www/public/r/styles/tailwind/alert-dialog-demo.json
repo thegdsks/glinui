@@ -3,7 +3,10 @@
   "name": "alert-dialog-demo",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["alert-dialog", "button"],
+  "registryDependencies": [
+    "alert-dialog",
+    "button"
+  ],
   "files": [
     {
       "path": "examples/alert-dialog-demo.tsx",

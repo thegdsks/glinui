@@ -3,7 +3,9 @@
   "name": "toast",
   "type": "registry:ui",
   "author": "glinui (https://glinui.com)",
-  "dependencies": ["@radix-ui/react-toast"],
+  "dependencies": [
+    "@radix-ui/react-toast"
+  ],
   "files": [
     {
       "path": "ui/toast.tsx",

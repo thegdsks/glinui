@@ -3,7 +3,9 @@
   "name": "breadcrumb-demo",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["breadcrumb"],
+  "registryDependencies": [
+    "breadcrumb"
+  ],
   "files": [
     {
       "path": "examples/breadcrumb-demo.tsx",

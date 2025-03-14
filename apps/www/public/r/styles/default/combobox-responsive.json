@@ -3,7 +3,11 @@
   "name": "combobox-responsive",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["combobox", "popover", "drawer"],
+  "registryDependencies": [
+    "combobox",
+    "popover",
+    "drawer"
+  ],
   "files": [
     {
       "path": "examples/combobox-responsive.tsx",

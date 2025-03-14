@@ -3,7 +3,9 @@
   "name": "alert-demo",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["alert"],
+  "registryDependencies": [
+    "alert"
+  ],
   "files": [
     {
       "path": "examples/alert-demo.tsx",

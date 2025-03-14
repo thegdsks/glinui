@@ -3,7 +3,11 @@
   "name": "combobox-dropdown-menu",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["command", "dropdown-menu", "button"],
+  "registryDependencies": [
+    "command",
+    "dropdown-menu",
+    "button"
+  ],
   "files": [
     {
       "path": "examples/combobox-dropdown-menu.tsx",

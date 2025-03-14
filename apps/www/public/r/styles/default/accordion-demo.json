@@ -3,7 +3,9 @@
   "name": "accordion-demo",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["accordion"],
+  "registryDependencies": [
+    "accordion"
+  ],
   "files": [
     {
       "path": "examples/accordion-demo.tsx",

@@ -3,7 +3,10 @@
   "name": "checkbox-form-single",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["checkbox", "form"],
+  "registryDependencies": [
+    "checkbox",
+    "form"
+  ],
   "files": [
     {
       "path": "examples/checkbox-form-single.tsx",

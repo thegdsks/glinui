@@ -3,7 +3,9 @@
   "name": "tooltip",
   "type": "registry:ui",
   "author": "glinui (https://glinui.com)",
-  "dependencies": ["@radix-ui/react-tooltip"],
+  "dependencies": [
+    "@radix-ui/react-tooltip"
+  ],
   "files": [
     {
       "path": "ui/tooltip.tsx",

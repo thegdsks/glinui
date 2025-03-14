@@ -3,8 +3,12 @@
   "name": "toggle-group",
   "type": "registry:ui",
   "author": "glinui (https://glinui.com)",
-  "dependencies": ["@radix-ui/react-toggle-group"],
-  "registryDependencies": ["toggle"],
+  "dependencies": [
+    "@radix-ui/react-toggle-group"
+  ],
+  "registryDependencies": [
+    "toggle"
+  ],
   "files": [
     {
       "path": "ui/toggle-group.tsx",

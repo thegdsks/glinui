@@ -3,7 +3,10 @@
   "name": "chart-radar-icons",
   "type": "registry:block",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["card", "chart"],
+  "registryDependencies": [
+    "card",
+    "chart"
+  ],
   "files": [
     {
       "path": "charts/chart-radar-icons.tsx",
@@ -12,5 +15,8 @@
       "target": ""
     }
   ],
-  "categories": ["charts", "charts-radar"]
+  "categories": [
+    "charts",
+    "charts-radar"
+  ]
 }

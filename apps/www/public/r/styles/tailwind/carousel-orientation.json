@@ -3,7 +3,9 @@
   "name": "carousel-orientation",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["carousel"],
+  "registryDependencies": [
+    "carousel"
+  ],
   "files": [
     {
       "path": "examples/carousel-orientation.tsx",

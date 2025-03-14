@@ -3,7 +3,10 @@
   "name": "drawer",
   "type": "registry:ui",
   "author": "glinui (https://glinui.com)",
-  "dependencies": ["vaul", "@radix-ui/react-dialog"],
+  "dependencies": [
+    "vaul",
+    "@radix-ui/react-dialog"
+  ],
   "files": [
     {
       "path": "ui/drawer.tsx",

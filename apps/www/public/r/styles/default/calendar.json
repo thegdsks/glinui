@@ -3,8 +3,13 @@
   "name": "calendar",
   "type": "registry:ui",
   "author": "glinui (https://glinui.com)",
-  "dependencies": ["react-day-picker@8.10.1", "date-fns"],
-  "registryDependencies": ["button"],
+  "dependencies": [
+    "react-day-picker@8.10.1",
+    "date-fns"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
   "files": [
     {
       "path": "ui/calendar.tsx",

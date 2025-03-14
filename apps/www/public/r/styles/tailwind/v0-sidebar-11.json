@@ -3,7 +3,12 @@
   "name": "v0-sidebar-11",
   "type": "registry:internal",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["sidebar", "breadcrumb", "separator", "collapsible"],
+  "registryDependencies": [
+    "sidebar",
+    "breadcrumb",
+    "separator",
+    "collapsible"
+  ],
   "files": [
     {
       "path": "internal/sidebar-11.tsx",

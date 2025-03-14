@@ -4,7 +4,12 @@
   "type": "registry:block",
   "author": "glinui (https://glinui.com)",
   "description": "A login page with form and image.",
-  "registryDependencies": ["button", "card", "input", "label"],
+  "registryDependencies": [
+    "button",
+    "card",
+    "input",
+    "label"
+  ],
   "files": [
     {
       "path": "blocks/login-04/page.tsx",
@@ -19,5 +24,8 @@
       "target": ""
     }
   ],
-  "categories": ["authentication", "login"]
+  "categories": [
+    "authentication",
+    "login"
+  ]
 }

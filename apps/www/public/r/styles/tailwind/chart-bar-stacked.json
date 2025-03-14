@@ -3,7 +3,10 @@
   "name": "chart-bar-stacked",
   "type": "registry:block",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["card", "chart"],
+  "registryDependencies": [
+    "card",
+    "chart"
+  ],
   "files": [
     {
       "path": "charts/chart-bar-stacked.tsx",
@@ -12,5 +15,8 @@
       "target": ""
     }
   ],
-  "categories": ["charts", "charts-bar"]
+  "categories": [
+    "charts",
+    "charts-bar"
+  ]
 }

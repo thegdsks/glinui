@@ -3,7 +3,9 @@
   "name": "input-otp-demo",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["input-otp"],
+  "registryDependencies": [
+    "input-otp"
+  ],
   "files": [
     {
       "path": "examples/input-otp-demo.tsx",

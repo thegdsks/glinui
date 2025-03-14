@@ -3,7 +3,10 @@
   "name": "dialog-close-button",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["dialog", "button"],
+  "registryDependencies": [
+    "dialog",
+    "button"
+  ],
   "files": [
     {
       "path": "examples/dialog-close-button.tsx",

@@ -3,7 +3,9 @@
   "name": "drawer-demo",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["drawer"],
+  "registryDependencies": [
+    "drawer"
+  ],
   "files": [
     {
       "path": "examples/drawer-demo.tsx",

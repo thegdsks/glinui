@@ -3,7 +3,9 @@
   "name": "toast-demo",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["toast"],
+  "registryDependencies": [
+    "toast"
+  ],
   "files": [
     {
       "path": "examples/toast-demo.tsx",

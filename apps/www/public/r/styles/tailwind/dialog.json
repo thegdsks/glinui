@@ -3,7 +3,9 @@
   "name": "dialog",
   "type": "registry:ui",
   "author": "glinui (https://glinui.com)",
-  "dependencies": ["@radix-ui/react-dialog"],
+  "dependencies": [
+    "@radix-ui/react-dialog"
+  ],
   "files": [
     {
       "path": "ui/dialog.tsx",

@@ -3,7 +3,9 @@
   "name": "popover",
   "type": "registry:ui",
   "author": "glinui (https://glinui.com)",
-  "dependencies": ["@radix-ui/react-popover"],
+  "dependencies": [
+    "@radix-ui/react-popover"
+  ],
   "files": [
     {
       "path": "ui/popover.tsx",

@@ -3,7 +3,10 @@
   "name": "dropdown-menu-checkboxes",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["dropdown-menu", "checkbox"],
+  "registryDependencies": [
+    "dropdown-menu",
+    "checkbox"
+  ],
   "files": [
     {
       "path": "examples/dropdown-menu-checkboxes.tsx",

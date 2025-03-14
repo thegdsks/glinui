@@ -3,7 +3,9 @@
   "name": "switch",
   "type": "registry:ui",
   "author": "glinui (https://glinui.com)",
-  "dependencies": ["@radix-ui/react-switch"],
+  "dependencies": [
+    "@radix-ui/react-switch"
+  ],
   "files": [
     {
       "path": "ui/switch.tsx",

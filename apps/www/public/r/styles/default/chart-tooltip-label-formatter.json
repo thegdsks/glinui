@@ -3,7 +3,10 @@
   "name": "chart-tooltip-label-formatter",
   "type": "registry:block",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["card", "chart"],
+  "registryDependencies": [
+    "card",
+    "chart"
+  ],
   "files": [
     {
       "path": "charts/chart-tooltip-label-formatter.tsx",
@@ -12,5 +15,8 @@
       "target": ""
     }
   ],
-  "categories": ["charts", "charts-tooltip"]
+  "categories": [
+    "charts",
+    "charts-tooltip"
+  ]
 }

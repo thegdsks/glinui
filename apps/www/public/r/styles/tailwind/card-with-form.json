@@ -3,7 +3,13 @@
   "name": "card-with-form",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["button", "card", "input", "label", "select"],
+  "registryDependencies": [
+    "button",
+    "card",
+    "input",
+    "label",
+    "select"
+  ],
   "files": [
     {
       "path": "examples/card-with-form.tsx",

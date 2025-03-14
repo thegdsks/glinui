@@ -3,7 +3,10 @@
   "name": "chart-area-legend",
   "type": "registry:block",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["card", "chart"],
+  "registryDependencies": [
+    "card",
+    "chart"
+  ],
   "files": [
     {
       "path": "charts/chart-area-legend.tsx",
@@ -12,5 +15,8 @@
       "target": ""
     }
   ],
-  "categories": ["charts", "charts-area"]
+  "categories": [
+    "charts",
+    "charts-area"
+  ]
 }

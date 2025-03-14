@@ -3,7 +3,12 @@
   "name": "v0-login-01",
   "type": "registry:internal",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["button", "card", "input", "label"],
+  "registryDependencies": [
+    "button",
+    "card",
+    "input",
+    "label"
+  ],
   "files": [
     {
       "path": "internal/login-01.tsx",

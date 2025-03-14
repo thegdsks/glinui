@@ -3,7 +3,9 @@
   "name": "command-demo",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["command"],
+  "registryDependencies": [
+    "command"
+  ],
   "files": [
     {
       "path": "examples/command-demo.tsx",

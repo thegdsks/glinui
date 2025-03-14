@@ -3,7 +3,9 @@
   "name": "aspect-ratio-demo",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["aspect-ratio"],
+  "registryDependencies": [
+    "aspect-ratio"
+  ],
   "files": [
     {
       "path": "examples/aspect-ratio-demo.tsx",

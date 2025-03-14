@@ -3,7 +3,11 @@
   "name": "input-form",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["input", "button", "form"],
+  "registryDependencies": [
+    "input",
+    "button",
+    "form"
+  ],
   "files": [
     {
       "path": "examples/input-form.tsx",

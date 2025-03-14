@@ -3,7 +3,9 @@
   "name": "table-demo",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["table"],
+  "registryDependencies": [
+    "table"
+  ],
   "files": [
     {
       "path": "examples/table-demo.tsx",

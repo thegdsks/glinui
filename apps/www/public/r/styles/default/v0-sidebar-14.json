@@ -3,7 +3,10 @@
   "name": "v0-sidebar-14",
   "type": "registry:internal",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["sidebar", "breadcrumb"],
+  "registryDependencies": [
+    "sidebar",
+    "breadcrumb"
+  ],
   "files": [
     {
       "path": "internal/sidebar-14.tsx",

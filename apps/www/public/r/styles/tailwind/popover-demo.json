@@ -3,7 +3,9 @@
   "name": "popover-demo",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["popover"],
+  "registryDependencies": [
+    "popover"
+  ],
   "files": [
     {
       "path": "examples/popover-demo.tsx",

@@ -3,7 +3,9 @@
   "name": "dialog-demo",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["dialog"],
+  "registryDependencies": [
+    "dialog"
+  ],
   "files": [
     {
       "path": "examples/dialog-demo.tsx",

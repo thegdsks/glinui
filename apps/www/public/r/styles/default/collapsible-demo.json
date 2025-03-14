@@ -3,7 +3,9 @@
   "name": "collapsible-demo",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["collapsible"],
+  "registryDependencies": [
+    "collapsible"
+  ],
   "files": [
     {
       "path": "examples/collapsible-demo.tsx",

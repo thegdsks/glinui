@@ -3,7 +3,9 @@
   "name": "label",
   "type": "registry:ui",
   "author": "glinui (https://glinui.com)",
-  "dependencies": ["@radix-ui/react-label"],
+  "dependencies": [
+    "@radix-ui/react-label"
+  ],
   "files": [
     {
       "path": "ui/label.tsx",

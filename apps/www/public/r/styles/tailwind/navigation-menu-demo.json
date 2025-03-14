@@ -3,7 +3,9 @@
   "name": "navigation-menu-demo",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["navigation-menu"],
+  "registryDependencies": [
+    "navigation-menu"
+  ],
   "files": [
     {
       "path": "examples/navigation-menu-demo.tsx",

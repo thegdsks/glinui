@@ -3,7 +3,9 @@
   "name": "sheet",
   "type": "registry:ui",
   "author": "glinui (https://glinui.com)",
-  "dependencies": ["@radix-ui/react-dialog"],
+  "dependencies": [
+    "@radix-ui/react-dialog"
+  ],
   "files": [
     {
       "path": "ui/sheet.tsx",

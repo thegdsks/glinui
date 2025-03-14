@@ -3,7 +3,9 @@
   "name": "resizable-demo-with-handle",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["resizable"],
+  "registryDependencies": [
+    "resizable"
+  ],
   "files": [
     {
       "path": "examples/resizable-demo-with-handle.tsx",

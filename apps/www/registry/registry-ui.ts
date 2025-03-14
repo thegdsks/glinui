@@ -1,4 +1,4 @@
-import { type Registry } from "../../../packages/glinui/src/registry/schematry"
+import { type Registry } from "../../../packages/glinui/src/registry"
 
 export const ui: Registry["items"] = [
   {

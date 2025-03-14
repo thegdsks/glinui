@@ -3,7 +3,9 @@
   "name": "label-demo",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["label"],
+  "registryDependencies": [
+    "label"
+  ],
   "files": [
     {
       "path": "examples/label-demo.tsx",

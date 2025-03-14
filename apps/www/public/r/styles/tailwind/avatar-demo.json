@@ -3,7 +3,9 @@
   "name": "avatar-demo",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["avatar"],
+  "registryDependencies": [
+    "avatar"
+  ],
   "files": [
     {
       "path": "examples/avatar-demo.tsx",

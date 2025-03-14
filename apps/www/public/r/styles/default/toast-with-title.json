@@ -3,7 +3,9 @@
   "name": "toast-with-title",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["toast"],
+  "registryDependencies": [
+    "toast"
+  ],
   "files": [
     {
       "path": "examples/toast-with-title.tsx",

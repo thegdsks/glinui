@@ -3,7 +3,9 @@
   "name": "hover-card-demo",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["hover-card"],
+  "registryDependencies": [
+    "hover-card"
+  ],
   "files": [
     {
       "path": "examples/hover-card-demo.tsx",

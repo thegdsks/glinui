@@ -3,8 +3,15 @@
   "name": "date-picker-form",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "dependencies": ["date-fns"],
-  "registryDependencies": ["button", "calendar", "form", "popover"],
+  "dependencies": [
+    "date-fns"
+  ],
+  "registryDependencies": [
+    "button",
+    "calendar",
+    "form",
+    "popover"
+  ],
   "files": [
     {
       "path": "examples/date-picker-form.tsx",

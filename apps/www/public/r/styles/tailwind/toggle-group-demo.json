@@ -3,7 +3,9 @@
   "name": "toggle-group-demo",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["toggle-group"],
+  "registryDependencies": [
+    "toggle-group"
+  ],
   "files": [
     {
       "path": "examples/toggle-group-demo.tsx",

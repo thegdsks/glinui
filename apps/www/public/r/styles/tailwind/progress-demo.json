@@ -3,7 +3,9 @@
   "name": "progress-demo",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["progress"],
+  "registryDependencies": [
+    "progress"
+  ],
   "files": [
     {
       "path": "examples/progress-demo.tsx",

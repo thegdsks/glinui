@@ -4,7 +4,12 @@
   "type": "registry:block",
   "author": "glinui (https://glinui.com)",
   "description": "A sidebar in a dialog.",
-  "registryDependencies": ["sidebar", "breadcrumb", "button", "dialog"],
+  "registryDependencies": [
+    "sidebar",
+    "breadcrumb",
+    "button",
+    "dialog"
+  ],
   "files": [
     {
       "path": "blocks/sidebar-13/page.tsx",
@@ -19,5 +24,8 @@
       "target": ""
     }
   ],
-  "categories": ["sidebar", "dashboard"]
+  "categories": [
+    "sidebar",
+    "dashboard"
+  ]
 }

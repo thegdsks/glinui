@@ -3,7 +3,10 @@
   "name": "combobox-form",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["command", "form"],
+  "registryDependencies": [
+    "command",
+    "form"
+  ],
   "files": [
     {
       "path": "examples/combobox-form.tsx",

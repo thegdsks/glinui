@@ -3,7 +3,9 @@
   "name": "checkbox-with-text",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["checkbox"],
+  "registryDependencies": [
+    "checkbox"
+  ],
   "files": [
     {
       "path": "examples/checkbox-with-text.tsx",

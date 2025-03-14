@@ -3,7 +3,11 @@
   "name": "calendar-form",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["calendar", "form", "popover"],
+  "registryDependencies": [
+    "calendar",
+    "form",
+    "popover"
+  ],
   "files": [
     {
       "path": "examples/calendar-form.tsx",

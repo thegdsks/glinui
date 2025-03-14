@@ -3,7 +3,10 @@
   "name": "drawer-dialog",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["drawer", "dialog"],
+  "registryDependencies": [
+    "drawer",
+    "dialog"
+  ],
   "files": [
     {
       "path": "examples/drawer-dialog.tsx",

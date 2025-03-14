@@ -3,7 +3,9 @@
   "name": "pagination-demo",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["pagination"],
+  "registryDependencies": [
+    "pagination"
+  ],
   "files": [
     {
       "path": "examples/pagination-demo.tsx",

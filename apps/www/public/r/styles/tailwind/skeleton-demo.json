@@ -3,7 +3,9 @@
   "name": "skeleton-demo",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["skeleton"],
+  "registryDependencies": [
+    "skeleton"
+  ],
   "files": [
     {
       "path": "examples/skeleton-demo.tsx",

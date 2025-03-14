@@ -3,7 +3,12 @@
   "name": "v0-sidebar-13",
   "type": "registry:internal",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["sidebar", "breadcrumb", "button", "dialog"],
+  "registryDependencies": [
+    "sidebar",
+    "breadcrumb",
+    "button",
+    "dialog"
+  ],
   "files": [
     {
       "path": "internal/sidebar-13.tsx",

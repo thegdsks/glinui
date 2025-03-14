@@ -3,7 +3,9 @@
   "name": "navigation-menu",
   "type": "registry:ui",
   "author": "glinui (https://glinui.com)",
-  "dependencies": ["@radix-ui/react-navigation-menu"],
+  "dependencies": [
+    "@radix-ui/react-navigation-menu"
+  ],
   "files": [
     {
       "path": "ui/navigation-menu.tsx",

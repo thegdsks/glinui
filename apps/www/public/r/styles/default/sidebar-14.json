@@ -4,7 +4,10 @@
   "type": "registry:block",
   "author": "glinui (https://glinui.com)",
   "description": "A sidebar on the right.",
-  "registryDependencies": ["sidebar", "breadcrumb"],
+  "registryDependencies": [
+    "sidebar",
+    "breadcrumb"
+  ],
   "files": [
     {
       "path": "blocks/sidebar-14/page.tsx",
@@ -19,5 +22,8 @@
       "target": ""
     }
   ],
-  "categories": ["sidebar", "dashboard"]
+  "categories": [
+    "sidebar",
+    "dashboard"
+  ]
 }

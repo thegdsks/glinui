@@ -3,7 +3,9 @@
   "name": "input-file",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["input"],
+  "registryDependencies": [
+    "input"
+  ],
   "files": [
     {
       "path": "examples/input-file.tsx",

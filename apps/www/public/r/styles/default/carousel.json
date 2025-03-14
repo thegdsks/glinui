@@ -3,8 +3,12 @@
   "name": "carousel",
   "type": "registry:ui",
   "author": "glinui (https://glinui.com)",
-  "dependencies": ["embla-carousel-react"],
-  "registryDependencies": ["button"],
+  "dependencies": [
+    "embla-carousel-react"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
   "files": [
     {
       "path": "ui/carousel.tsx",

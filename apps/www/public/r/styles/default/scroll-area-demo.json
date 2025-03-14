@@ -3,7 +3,9 @@
   "name": "scroll-area-demo",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["scroll-area"],
+  "registryDependencies": [
+    "scroll-area"
+  ],
   "files": [
     {
       "path": "examples/scroll-area-demo.tsx",

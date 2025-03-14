@@ -3,7 +3,9 @@
   "name": "sonner-demo",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["sonner"],
+  "registryDependencies": [
+    "sonner"
+  ],
   "files": [
     {
       "path": "examples/sonner-demo.tsx",

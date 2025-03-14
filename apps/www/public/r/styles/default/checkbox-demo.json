@@ -3,7 +3,9 @@
   "name": "checkbox-demo",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["checkbox"],
+  "registryDependencies": [
+    "checkbox"
+  ],
   "files": [
     {
       "path": "examples/checkbox-demo.tsx",

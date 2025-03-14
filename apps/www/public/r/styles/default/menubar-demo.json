@@ -3,7 +3,9 @@
   "name": "menubar-demo",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["menubar"],
+  "registryDependencies": [
+    "menubar"
+  ],
   "files": [
     {
       "path": "examples/menubar-demo.tsx",

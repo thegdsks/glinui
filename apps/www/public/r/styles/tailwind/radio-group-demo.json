@@ -3,7 +3,9 @@
   "name": "radio-group-demo",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["radio-group"],
+  "registryDependencies": [
+    "radio-group"
+  ],
   "files": [
     {
       "path": "examples/radio-group-demo.tsx",

@@ -3,8 +3,14 @@
   "name": "date-picker-with-range",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "dependencies": ["date-fns"],
-  "registryDependencies": ["button", "calendar", "popover"],
+  "dependencies": [
+    "date-fns"
+  ],
+  "registryDependencies": [
+    "button",
+    "calendar",
+    "popover"
+  ],
   "files": [
     {
       "path": "examples/date-picker-with-range.tsx",

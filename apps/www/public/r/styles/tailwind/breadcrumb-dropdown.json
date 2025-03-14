@@ -3,7 +3,9 @@
   "name": "breadcrumb-dropdown",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["breadcrumb"],
+  "registryDependencies": [
+    "breadcrumb"
+  ],
   "files": [
     {
       "path": "examples/breadcrumb-dropdown.tsx",

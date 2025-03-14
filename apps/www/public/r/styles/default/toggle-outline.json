@@ -3,7 +3,9 @@
   "name": "toggle-outline",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["toggle"],
+  "registryDependencies": [
+    "toggle"
+  ],
   "files": [
     {
       "path": "examples/toggle-outline.tsx",

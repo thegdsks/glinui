@@ -3,7 +3,9 @@
   "name": "select-form",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["select"],
+  "registryDependencies": [
+    "select"
+  ],
   "files": [
     {
       "path": "examples/select-form.tsx",

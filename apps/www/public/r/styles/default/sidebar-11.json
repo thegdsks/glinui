@@ -4,7 +4,12 @@
   "type": "registry:block",
   "author": "glinui (https://glinui.com)",
   "description": "A sidebar with a collapsible file tree.",
-  "registryDependencies": ["sidebar", "breadcrumb", "separator", "collapsible"],
+  "registryDependencies": [
+    "sidebar",
+    "breadcrumb",
+    "separator",
+    "collapsible"
+  ],
   "files": [
     {
       "path": "blocks/sidebar-11/page.tsx",
@@ -19,5 +24,8 @@
       "target": ""
     }
   ],
-  "categories": ["sidebar", "dashboard"]
+  "categories": [
+    "sidebar",
+    "dashboard"
+  ]
 }

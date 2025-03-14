@@ -3,7 +3,10 @@
   "name": "sonner",
   "type": "registry:ui",
   "author": "glinui (https://glinui.com)",
-  "dependencies": ["sonner", "next-themes"],
+  "dependencies": [
+    "sonner",
+    "next-themes"
+  ],
   "files": [
     {
       "path": "ui/sonner.tsx",

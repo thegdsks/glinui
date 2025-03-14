@@ -3,7 +3,9 @@
   "name": "aspect-ratio",
   "type": "registry:ui",
   "author": "glinui (https://glinui.com)",
-  "dependencies": ["@radix-ui/react-aspect-ratio"],
+  "dependencies": [
+    "@radix-ui/react-aspect-ratio"
+  ],
   "files": [
     {
       "path": "ui/aspect-ratio.tsx",

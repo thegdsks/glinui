@@ -3,7 +3,9 @@
   "name": "menubar",
   "type": "registry:ui",
   "author": "glinui (https://glinui.com)",
-  "dependencies": ["@radix-ui/react-menubar"],
+  "dependencies": [
+    "@radix-ui/react-menubar"
+  ],
   "files": [
     {
       "path": "ui/menubar.tsx",

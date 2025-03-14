@@ -3,7 +3,9 @@
   "name": "tooltip-demo",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["tooltip"],
+  "registryDependencies": [
+    "tooltip"
+  ],
   "files": [
     {
       "path": "examples/tooltip-demo.tsx",

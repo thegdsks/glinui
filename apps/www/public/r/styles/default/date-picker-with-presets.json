@@ -3,8 +3,15 @@
   "name": "date-picker-with-presets",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "dependencies": ["date-fns"],
-  "registryDependencies": ["button", "calendar", "popover", "select"],
+  "dependencies": [
+    "date-fns"
+  ],
+  "registryDependencies": [
+    "button",
+    "calendar",
+    "popover",
+    "select"
+  ],
   "files": [
     {
       "path": "examples/date-picker-with-presets.tsx",

@@ -3,7 +3,9 @@
   "name": "slider-demo",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["slider"],
+  "registryDependencies": [
+    "slider"
+  ],
   "files": [
     {
       "path": "examples/slider-demo.tsx",

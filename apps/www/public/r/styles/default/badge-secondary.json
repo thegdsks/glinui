@@ -3,7 +3,9 @@
   "name": "badge-secondary",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["badge"],
+  "registryDependencies": [
+    "badge"
+  ],
   "files": [
     {
       "path": "examples/badge-secondary.tsx",

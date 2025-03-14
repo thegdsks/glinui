@@ -3,7 +3,9 @@
   "name": "button-destructive",
   "type": "registry:example",
   "author": "glinui (https://glinui.com)",
-  "registryDependencies": ["button"],
+  "registryDependencies": [
+    "button"
+  ],
   "files": [
     {
       "path": "examples/button-destructive.tsx",

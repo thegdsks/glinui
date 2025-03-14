@@ -3,7 +3,9 @@
   "name": "checkbox",
   "type": "registry:ui",
   "author": "glinui (https://glinui.com)",
-  "dependencies": ["@radix-ui/react-checkbox"],
+  "dependencies": [
+    "@radix-ui/react-checkbox"
+  ],
   "files": [
     {
       "path": "ui/checkbox.tsx",
