@@ -1,5 +1,6 @@
-import { Transformer } from "@/src/utils/transformers"
 import { SyntaxKind } from "ts-morph"
+
+import { Transformer } from "../../../src/utils/transformers"
 
 const directiveRegex = /^["']use client["']$/g
 

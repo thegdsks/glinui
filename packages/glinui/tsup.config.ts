@@ -1,4 +1,13 @@
+import tsconfigPaths from "tsconfig-paths"
 import { defineConfig } from "tsup"
+
+tsconfigPaths.register({
+  baseUrl: "./",
+  paths: {
+    "@/*": ["./*"],
+    "@/src/*": ["src/*"],
+  },
+})
 
 export default defineConfig({
   clean: true,

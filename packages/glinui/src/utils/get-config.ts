@@ -1,11 +1,12 @@
 import path from "path"
-import { getProjectInfo } from "@/src/utils/get-project-info"
-import { highlighter } from "@/src/utils/highlighter"
-import { resolveImport } from "@/src/utils/resolve-import"
 import { cosmiconfig } from "cosmiconfig"
 import fg from "fast-glob"
 import { loadConfig } from "tsconfig-paths"
 import { z } from "zod"
+
+import { getProjectInfo } from "../../src/utils/get-project-info"
+import { highlighter } from "../../src/utils/highlighter"
+import { resolveImport } from "../../src/utils/resolve-import"
 
 export const DEFAULT_STYLE = "default"
 export const DEFAULT_COMPONENTS = "@/components"

@@ -1,18 +1,19 @@
 import { promises as fs } from "fs"
 import path from "path"
-import {
-  registryItemCssVarsSchema,
-  registryItemTailwindSchema,
-} from "@/src/registry/schema"
-import { Config } from "@/src/utils/get-config"
-import { TailwindVersion } from "@/src/utils/get-project-info"
-import { highlighter } from "@/src/utils/highlighter"
-import { spinner } from "@/src/utils/spinner"
 import postcss from "postcss"
 import AtRule from "postcss/lib/at-rule"
 import Root from "postcss/lib/root"
 import Rule from "postcss/lib/rule"
 import { z } from "zod"
+
+import {
+  registryItemCssVarsSchema,
+  registryItemTailwindSchema,
+} from "../../../src/registry/schema"
+import { Config } from "../../../src/utils/get-config"
+import { TailwindVersion } from "../../../src/utils/get-project-info"
+import { highlighter } from "../../../src/utils/highlighter"
+import { spinner } from "../../../src/utils/spinner"
 
 export async function updateCssVars(
   cssVars: z.infer<typeof registryItemCssVarsSchema> | undefined,

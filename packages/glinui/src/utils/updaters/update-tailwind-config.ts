@@ -1,11 +1,6 @@
 import { promises as fs } from "fs"
 import { tmpdir } from "os"
 import path from "path"
-import { registryItemTailwindSchema } from "@/src/registry/schema"
-import { Config } from "@/src/utils/get-config"
-import { TailwindVersion } from "@/src/utils/get-project-info"
-import { highlighter } from "@/src/utils/highlighter"
-import { spinner } from "@/src/utils/spinner"
 import deepmerge from "deepmerge"
 import objectToString from "stringify-object"
 import { type Config as TailwindConfig } from "tailwindcss"
@@ -20,6 +15,12 @@ import {
   VariableStatement,
 } from "ts-morph"
 import { z } from "zod"
+
+import { registryItemTailwindSchema } from "../../../src/registry/schema"
+import { Config } from "../../../src/utils/get-config"
+import { TailwindVersion } from "../../../src/utils/get-project-info"
+import { highlighter } from "../../../src/utils/highlighter"
+import { spinner } from "../../../src/utils/spinner"
 
 export type UpdaterTailwindConfig = Omit<TailwindConfig, "plugins"> & {
   // We only want string plugins for now.

@@ -1,16 +1,17 @@
 import path from "path"
-import { FRAMEWORKS, Framework } from "@/src/utils/frameworks"
+import fg from "fast-glob"
+import fs from "fs-extra"
+import { loadConfig } from "tsconfig-paths"
+import { z } from "zod"
+
+import { FRAMEWORKS, Framework } from "../../src/utils/frameworks"
 import {
   Config,
   RawConfig,
   getConfig,
   resolveConfigPaths,
-} from "@/src/utils/get-config"
-import { getPackageInfo } from "@/src/utils/get-package-info"
-import fg from "fast-glob"
-import fs from "fs-extra"
-import { loadConfig } from "tsconfig-paths"
-import { z } from "zod"
+} from "../../src/utils/get-config"
+import { getPackageInfo } from "../../src/utils/get-package-info"
 
 export type TailwindVersion = "v3" | "v4" | null
 

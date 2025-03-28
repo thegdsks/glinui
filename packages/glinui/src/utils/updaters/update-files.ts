@@ -1,20 +1,27 @@
 import { existsSync, promises as fs } from "fs"
 import path, { basename } from "path"
-import { getRegistryBaseColor } from "@/src/registry/api"
-import { RegistryItem, registryItemFileSchema } from "@/src/registry/schema"
-import { Config } from "@/src/utils/get-config"
-import { ProjectInfo, getProjectInfo } from "@/src/utils/get-project-info"
-import { highlighter } from "@/src/utils/highlighter"
-import { logger } from "@/src/utils/logger"
-import { spinner } from "@/src/utils/spinner"
-import { transform } from "@/src/utils/transformers"
-import { transformCssVars } from "@/src/utils/transformers/transform-css-vars"
-import { transformIcons } from "@/src/utils/transformers/transform-icons"
-import { transformImport } from "@/src/utils/transformers/transform-import"
-import { transformRsc } from "@/src/utils/transformers/transform-rsc"
-import { transformTwPrefixes } from "@/src/utils/transformers/transform-tw-prefix"
 import prompts from "prompts"
 import { z } from "zod"
+
+import { getRegistryBaseColor } from "../../../src/registry/api"
+import {
+  RegistryItem,
+  registryItemFileSchema,
+} from "../../../src/registry/schema"
+import { Config } from "../../../src/utils/get-config"
+import {
+  ProjectInfo,
+  getProjectInfo,
+} from "../../../src/utils/get-project-info"
+import { highlighter } from "../../../src/utils/highlighter"
+import { logger } from "../../../src/utils/logger"
+import { spinner } from "../../../src/utils/spinner"
+import { transform } from "../../../src/utils/transformers"
+import { transformCssVars } from "../../../src/utils/transformers/transform-css-vars"
+import { transformIcons } from "../../../src/utils/transformers/transform-icons"
+import { transformImport } from "../../../src/utils/transformers/transform-import"
+import { transformRsc } from "../../../src/utils/transformers/transform-rsc"
+import { transformTwPrefixes } from "../../../src/utils/transformers/transform-tw-prefix"
 
 export async function updateFiles(
   files: RegistryItem["files"],

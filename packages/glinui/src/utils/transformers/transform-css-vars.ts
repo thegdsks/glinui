@@ -1,7 +1,8 @@
-import { registryBaseColorSchema } from "@/src/registry/schema"
-import { Transformer } from "@/src/utils/transformers"
 import { ScriptKind, SyntaxKind } from "ts-morph"
 import { z } from "zod"
+
+import { registryBaseColorSchema } from "../../../src/registry/schema"
+import { Transformer } from "../../../src/utils/transformers"
 
 export const transformCssVars: Transformer = async ({
   sourceFile,

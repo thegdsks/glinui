@@ -1,13 +1,13 @@
 #!/usr/bin/env node
-import { add } from "@/src/commands/add"
-import { build } from "@/src/commands/build"
-import { diff } from "@/src/commands/diff"
-import { info } from "@/src/commands/info"
-import { init } from "@/src/commands/init"
-import { migrate } from "@/src/commands/migrate"
 import { Command } from "commander"
 
 import packageJson from "../package.json"
+import { add } from "../src/commands/add"
+import { build } from "../src/commands/build"
+import { diff } from "../src/commands/diff"
+import { info } from "../src/commands/info"
+import { init } from "../src/commands/init"
+import { migrate } from "../src/commands/migrate"
 
 process.on("SIGINT", () => process.exit(0))
 process.on("SIGTERM", () => process.exit(0))

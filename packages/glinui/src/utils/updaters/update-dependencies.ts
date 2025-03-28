@@ -1,11 +1,12 @@
-import { RegistryItem } from "@/src/registry/schema"
-import { Config } from "@/src/utils/get-config"
-import { getPackageInfo } from "@/src/utils/get-package-info"
-import { getPackageManager } from "@/src/utils/get-package-manager"
-import { logger } from "@/src/utils/logger"
-import { spinner } from "@/src/utils/spinner"
 import { execa } from "execa"
 import prompts from "prompts"
+
+import { RegistryItem } from "../../../src/registry/schema"
+import { Config } from "../../../src/utils/get-config"
+import { getPackageInfo } from "../../../src/utils/get-package-info"
+import { getPackageManager } from "../../../src/utils/get-package-manager"
+import { logger } from "../../../src/utils/logger"
+import { spinner } from "../../../src/utils/spinner"
 
 export async function updateDependencies(
   dependencies: RegistryItem["dependencies"],

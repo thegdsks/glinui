@@ -1,7 +1,8 @@
-import { getRegistryIcons } from "@/src/registry/api"
-import { ICON_LIBRARIES } from "@/src/utils/icon-libraries"
-import { Transformer } from "@/src/utils/transformers"
 import { SourceFile, SyntaxKind } from "ts-morph"
+
+import { getRegistryIcons } from "../../../src/registry/api"
+import { ICON_LIBRARIES } from "../../../src/utils/icon-libraries"
+import { Transformer } from "../../../src/utils/transformers"
 
 // Lucide is the default icon library in the registry.
 const SOURCE_LIBRARY = "lucide"

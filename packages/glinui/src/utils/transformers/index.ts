@@ -1,16 +1,16 @@
 import { promises as fs } from "fs"
 import { tmpdir } from "os"
 import path from "path"
-import { registryBaseColorSchema } from "@/src/registry/schema"
-import { Config } from "@/src/utils/get-config"
-import { transformCssVars } from "@/src/utils/transformers/transform-css-vars"
-import { transformIcons } from "@/src/utils/transformers/transform-icons"
-import { transformImport } from "@/src/utils/transformers/transform-import"
-import { transformJsx } from "@/src/utils/transformers/transform-jsx"
-import { transformRsc } from "@/src/utils/transformers/transform-rsc"
 import { Project, ScriptKind, type SourceFile } from "ts-morph"
 import { z } from "zod"
 
+import { registryBaseColorSchema } from "../../../src/registry/schema"
+import { Config } from "../../../src/utils/get-config"
+import { transformCssVars } from "../../../src/utils/transformers/transform-css-vars"
+import { transformIcons } from "../../../src/utils/transformers/transform-icons"
+import { transformImport } from "../../../src/utils/transformers/transform-import"
+import { transformJsx } from "../../../src/utils/transformers/transform-jsx"
+import { transformRsc } from "../../../src/utils/transformers/transform-rsc"
 import { transformTwPrefixes } from "./transform-tw-prefix"
 
 export type TransformOpts = {

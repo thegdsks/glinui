@@ -59,7 +59,6 @@
     "autoprefixer": "^10.4.14",
     "concurrently": "^8.0.1",
     "cross-env": "^7.0.3",
-    "eslint": "^8.41.0",
     "eslint-config-next": "13.3.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-config-turbo": "^1.9.9",
@@ -71,7 +70,6 @@
     "puppeteer": "^23.6.0",
     "tailwindcss": "3.4.6",
     "tailwindcss-animate": "^1.0.5",
-    "tsx": "^4.1.4",
     "turbo": "^1.9.9",
     "vite": "^5.4.1",
     "vite-tsconfig-paths": "^4.2.0",
@@ -81,6 +79,8 @@
     "@types/node": "^20.11.27",
     "@types/react": "^18.2.65",
     "@types/react-dom": "^18.2.22",
-    "typescript": "^5.5.3"
+    "eslint": "^8.57.1",
+    "tsx": "^3.12.7",
+    "typescript": "^5.8.2"
   }
 }

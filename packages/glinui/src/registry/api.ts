@@ -1,15 +1,15 @@
 import path from "path"
-import { Config, getTargetStyleFromConfig } from "@/src/utils/get-config"
-import { getProjectTailwindVersionFromConfig } from "@/src/utils/get-project-info"
-import { handleError } from "@/src/utils/handle-error"
-import { highlighter } from "@/src/utils/highlighter"
-import { logger } from "@/src/utils/logger"
-import { buildTailwindThemeColorsFromCssVars } from "@/src/utils/updaters/update-tailwind-config"
 import deepmerge from "deepmerge"
 import { HttpsProxyAgent } from "https-proxy-agent"
 import fetch from "node-fetch"
 import { z } from "zod"
 
+import { Config, getTargetStyleFromConfig } from "../../src/utils/get-config"
+import { getProjectTailwindVersionFromConfig } from "../../src/utils/get-project-info"
+import { handleError } from "../../src/utils/handle-error"
+import { highlighter } from "../../src/utils/highlighter"
+import { logger } from "../../src/utils/logger"
+import { buildTailwindThemeColorsFromCssVars } from "../../src/utils/updaters/update-tailwind-config"
 import {
   iconsSchema,
   registryBaseColorSchema,

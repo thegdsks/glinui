@@ -1,12 +1,14 @@
 import path from "path"
+import { z } from "zod"
+
 import {
   fetchRegistry,
   getRegistryParentMap,
   getRegistryTypeAliasMap,
   registryResolveItemsTree,
   resolveRegistryItems,
-} from "@/src/registry/api"
-import { registryItemSchema } from "@/src/registry/schema"
+} from "../../src/registry/api"
+import { registryItemSchema } from "../../src/registry/schema"
 import {
   configSchema,
   findCommonRoot,
@@ -14,16 +16,15 @@ import {
   getWorkspaceConfig,
   workspaceConfigSchema,
   type Config,
-} from "@/src/utils/get-config"
-import { getProjectTailwindVersionFromConfig } from "@/src/utils/get-project-info"
-import { handleError } from "@/src/utils/handle-error"
-import { logger } from "@/src/utils/logger"
-import { spinner } from "@/src/utils/spinner"
-import { updateCssVars } from "@/src/utils/updaters/update-css-vars"
-import { updateDependencies } from "@/src/utils/updaters/update-dependencies"
-import { updateFiles } from "@/src/utils/updaters/update-files"
-import { updateTailwindConfig } from "@/src/utils/updaters/update-tailwind-config"
-import { z } from "zod"
+} from "../../src/utils/get-config"
+import { getProjectTailwindVersionFromConfig } from "../../src/utils/get-project-info"
+import { handleError } from "../../src/utils/handle-error"
+import { logger } from "../../src/utils/logger"
+import { spinner } from "../../src/utils/spinner"
+import { updateCssVars } from "../../src/utils/updaters/update-css-vars"
+import { updateDependencies } from "../../src/utils/updaters/update-dependencies"
+import { updateFiles } from "../../src/utils/updaters/update-files"
+import { updateTailwindConfig } from "../../src/utils/updaters/update-tailwind-config"
 
 export async function addComponents(
   components: string[],

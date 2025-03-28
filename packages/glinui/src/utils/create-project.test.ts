@@ -1,17 +1,17 @@
-import { fetchRegistry } from "@/src/registry/api"
 import { execa } from "execa"
 import fs from "fs-extra"
 import prompts from "prompts"
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest"
 
+import { fetchRegistry } from "../../src/registry/api"
 import { TEMPLATES, createProject } from "./create-project"
 
 // Mock dependencies
 vi.mock("fs-extra")
 vi.mock("execa")
 vi.mock("prompts")
-vi.mock("@/src/registry/api")
-vi.mock("@/src/utils/get-package-manager", () => ({
+vi.mock("../../src/registry/api")
+vi.mock("../../src/utils/get-package-manager", () => ({
   getPackageManager: vi.fn().mockResolvedValue("npm"),
 }))
 
