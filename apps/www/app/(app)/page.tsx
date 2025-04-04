@@ -11,6 +11,9 @@ import {
   PageHeaderDescription,
   PageHeaderHeading,
 } from "@/components/page-header"
+import TechStack from "@/components/sections/TechStack"
+import CanvasCursor from "@/components/sections/canvas-cursor"
+import Hero from "@/components/sections/hero"
 import { Button } from "@/registry/tailwind/ui/button"
 
 const title = "Build your component library"
@@ -44,7 +47,10 @@ export const metadata: Metadata = {
 export default function IndexPage() {
   return (
     <>
-      <PageHeader>
+      <Hero />
+
+      <CanvasCursor />
+      {/* <PageHeader>
         <Announcement />
         <PageHeaderHeading>{title}</PageHeaderHeading>
         <PageHeaderDescription>{description}</PageHeaderDescription>
@@ -56,44 +62,16 @@ export default function IndexPage() {
             <Link href="/blocks">Browse Blocks</Link>
           </Button>
         </PageActions>
-      </PageHeader>
-      <div className="border-grid border-b">
-        <div className="container-wrapper">
-          <div className="container py-4">
-            <ExamplesNav className="[&>a:first-child]:text-primary" />
-          </div>
-        </div>
-      </div>
-      <div className="container-wrapper">
-        <div className="container py-6">
-          <section className="overflow-hidden rounded-lg border bg-background shadow-md md:hidden md:shadow-xl">
-            <Image
-              src="/examples/cards-light.png"
-              width={1280}
-              height={1214}
-              alt="Cards"
-              className="block dark:hidden"
-            />
-            <Image
-              src="/examples/cards-dark.png"
-              width={1280}
-              height={1214}
-              alt="Cards"
-              className="hidden dark:block"
-            />
-          </section>
-          <section
-            className="hidden md:block [&>div]:p-0"
-            style={
-              {
-                "--radius": "0.75rem",
-              } as React.CSSProperties
-            }
-          >
-            <CardsDemo />
-          </section>
-        </div>
-      </div>
+      </PageHeader> */}
+
+      {/* Tech Stack */}
+      <section className="container">
+        <h2 className="mb-12 text-3xl font-bold tracking-tighter sm:text-4xl">
+          Technology Stack
+        </h2>
+
+        <TechStack />
+      </section>
     </>
   )
 }
