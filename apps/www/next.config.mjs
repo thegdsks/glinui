@@ -9,6 +9,7 @@ const nextConfig = {
   },
   reactStrictMode: true,
   swcMinify: true,
+  basePath: "/docs",
   images: {
     dangerouslyAllowSVG: true,
     remotePatterns: [
@@ -20,7 +21,7 @@ const nextConfig = {
         protocol: "https",
         hostname: "images.unsplash.com",
       },
-       {
+      {
         protocol: "https",
         hostname: "cdn.simpleicons.org",
       },
