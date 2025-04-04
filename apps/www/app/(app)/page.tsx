@@ -11,6 +11,7 @@ import {
   PageHeaderDescription,
   PageHeaderHeading,
 } from "@/components/page-header"
+import CursorToggle from "@/components/sections/CursorToggle"
 import TechStack from "@/components/sections/TechStack"
 import CanvasCursor from "@/components/sections/canvas-cursor"
 import Hero from "@/components/sections/hero"
@@ -48,7 +49,6 @@ export default function IndexPage() {
   return (
     <>
       <Hero />
-
       <CanvasCursor />
       {/* <PageHeader>
         <Announcement />
@@ -66,10 +66,6 @@ export default function IndexPage() {
 
       {/* Tech Stack */}
       <section className="container">
-        <h2 className="mb-12 text-3xl font-bold tracking-tighter sm:text-4xl">
-          Technology Stack
-        </h2>
-
         <TechStack />
       </section>
     </>

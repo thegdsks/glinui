@@ -1,5 +1,4 @@
-// @ts-nocheck
-
+//@ts-nocheck
 import { useEffect } from "react"
 
 const useCanvasCursor = () => {
@@ -114,9 +113,11 @@ const useCanvasCursor = () => {
       ctx.globalCompositeOperation = "lighter"
       ctx.strokeStyle = "hsla(" + Math.round(f.update()) + ",50%,50%,0.2)"
       ctx.lineWidth = 1
-      for (var e, t = 0; t < E.trails; t++) {
-        ;(e = lines[t]).update()
-        e.draw()
+      for (let i = 0; i < lines.length; i++) {
+        if (lines[i]) {
+          lines[i].update()
+          lines[i].draw()
+        }
       }
       ctx.frame++
       window.requestAnimationFrame(render)

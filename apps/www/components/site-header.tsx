@@ -8,6 +8,8 @@ import { MobileNav } from "@/components/mobile-nav"
 import { ModeSwitcher } from "@/components/mode-switcher"
 import { Button } from "@/registry/tailwind/ui/button"
 
+import CursorToggle from "./sections/CursorToggle"
+
 export function SiteHeader() {
   return (
     <header className="border-grid sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -36,6 +38,8 @@ export function SiteHeader() {
                 </Link>
               </Button>
               <ModeSwitcher />
+
+              {/* <CursorToggle /> */}
             </nav>
           </div>
         </div>
