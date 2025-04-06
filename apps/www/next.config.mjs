@@ -27,6 +27,16 @@ const nextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/",
+        destination: "/docs",
+        basePath: false,
+        permanent: false,
+      },
+    ]
+  },
   redirects() {
     return [
       {
