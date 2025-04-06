@@ -9,10 +9,13 @@ import { Icons } from "@/components/icons"
 
 export function MainNav() {
   const pathname = usePathname()
-
+  console.log("pathname", pathname)
   return (
     <div className="mr-4 hidden md:flex">
-      <Link href="/" className="mr-4 flex items-center gap-2 lg:mr-6">
+      <Link
+        href="https://glinui.com/"
+        className="mr-4 flex items-center gap-2 lg:mr-6"
+      >
         <Icons.logo className="h-6 w-6" />
         <span className="hidden font-bold lg:inline-block">
           {siteConfig.name}
@@ -20,10 +23,10 @@ export function MainNav() {
       </Link>
       <nav className="flex items-center gap-4 text-sm xl:gap-6">
         <Link
-          href="/docs/installation"
+          href="/installation"
           className={cn(
             "transition-colors hover:text-foreground/80",
-            pathname === "/docs/installation"
+            pathname === "/installation"
               ? "text-foreground"
               : "text-foreground/80"
           )}
@@ -31,11 +34,11 @@ export function MainNav() {
           Docs
         </Link>
         <Link
-          href="/docs/components"
+          href="/components"
           className={cn(
             "transition-colors hover:text-foreground/80",
-            pathname?.startsWith("/docs/components") &&
-              !pathname?.startsWith("/docs/component/chart")
+            pathname?.startsWith("/components") &&
+              !pathname?.startsWith("/component/chart")
               ? "text-foreground"
               : "text-foreground/80"
           )}
@@ -43,41 +46,7 @@ export function MainNav() {
           Components
         </Link>
         <Link
-          href="/blocks"
-          className={cn(
-            "transition-colors hover:text-foreground/80",
-            pathname?.startsWith("/blocks")
-              ? "text-foreground"
-              : "text-foreground/80"
-          )}
-        >
-          Blocks
-        </Link>
-        <Link
-          href="/charts"
-          className={cn(
-            "transition-colors hover:text-foreground/80",
-            pathname?.startsWith("/docs/component/chart") ||
-              pathname?.startsWith("/charts")
-              ? "text-foreground"
-              : "text-foreground/80"
-          )}
-        >
-          Charts
-        </Link>
-        <Link
-          href="/themes"
-          className={cn(
-            "transition-colors hover:text-foreground/80",
-            pathname?.startsWith("/themes")
-              ? "text-foreground"
-              : "text-foreground/80"
-          )}
-        >
-          Themes
-        </Link>
-        <Link
-          href="/colors"
+          href="https://www.glinui.com/colors"
           className={cn(
             "transition-colors hover:text-foreground/80",
             pathname?.startsWith("/colors")

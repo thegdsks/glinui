@@ -21,7 +21,7 @@ export default function DocsLayout({
             </aside>
             {children}
           </div>
-        </div>{" "}
+        </div>
       </main>
       <SiteFooter />
     </div>
